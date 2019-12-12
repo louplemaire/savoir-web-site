@@ -1,0 +1,29 @@
+// Primary buttons
+a.primaryButton{
+    padding: 16px 32px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: $color-secondary;
+    color: $background-color;
+    position: relative;
+}
+a.primaryButton::after{
+    content: " ";
+    position: absolute;
+    z-index: -100;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: $color-secondary;
+    opacity: 0.5;
+    transition: transform .2s;
+    transition-timing-function: ease-in-out;
+    will-change: transform;
+    transform: translate(-4px, 4px)
+}
+a.primaryButton:hover::after{
+    transform: translate(-6px, 6px)
+}
