@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 80px;
+    &__logo{
+        width: 135px;
+    }
+    &__menu{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-between;
+        li{
+            margin-left: 40px;
+            a{
+                text-decoration: none;
+                color: $text-color;
+            }
+        }
+    }
+}
