@@ -1,0 +1,87 @@
+// Explore
+.exploreMain{
+    // background-color: $color-primary;
+    height: 100vh;
+    &__exploreContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__explorer{
+            position: relative;
+            width: 41vw;
+            margin-top: 35px;
+            &__researcher{
+                width: 100%;
+                padding: 16px;
+                border-radius: 10px;
+                color: $text-color;
+                text-decoration: none;
+                font-family: $font-primary;
+                font-size: $font-size-body;
+                border: 2px solid;
+                border-color: $color-secondary;
+                background-color: $background-color;
+                outline: none;
+                cursor: pointer;
+            }
+            &__subResearcher{
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -100;
+                width: 100%;
+                height: 21px;
+                padding: 16px;
+                border-radius: 10px;
+                color: $text-color;
+                text-decoration: none;
+                font-family: $font-primary;
+                font-size: $font-size-body;
+                border: 2px solid;
+                border-color: $color-secondary;
+                background-color: $background-color;
+                opacity: 0.5;
+                transition: transform .2s;
+                transition-timing-function: ease-in-out;
+                transform: translate(-4px, 4px);
+                will-change: transform;
+            }
+        }
+        &__tokenTraffic{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 80px 80px 70px 80px;
+            &__info{
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                align-items: baseline;
+                justify-content: center;
+                width: 30vw;
+                padding: 16px 118px;
+                border-radius: 5px;
+                background-color: $background-color;
+                &__number,&__subject{
+                    margin-right: 8px;
+                    font-family: $font-size-title;
+                    font-size: $font-size-subtitle;
+                }
+            }
+            &__info::after{
+                content: " ";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -100;
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+                background: $color-secondary;
+                opacity: 0.5;
+                transform: translate(-4px, 4px);
+            }
+        }
+    }
+}
