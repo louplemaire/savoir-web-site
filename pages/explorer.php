@@ -1,4 +1,5 @@
 <main class="exploreMain">
+    <!-- Explorer -->
     <div class="exploreMain__exploreContainer">
         <div class="exploreMain__exploreContainer__explorer">
             <input class="exploreMain__exploreContainer__explorer__researcher" type="text" placeholder="Recherchez un utilisateur…">
