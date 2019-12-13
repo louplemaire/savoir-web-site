@@ -1,0 +1,38 @@
+{
+    "name": "manamine/php-eos-rpc-sdk",
+    "description": "PHP SDK for the EOS RPC API",
+    "type": "library",
+    "keywords": ["php","eos","rpc","sdk","api","crypto","blockchain"],
+    "homepage": "https://github.com/alienzin/php-eos-rpc-sdk",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "DongJin Seo",
+            "email": "alienzin@manamine.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "~6.0",
+        "vlucas/phpdotenv": "^2.4",
+        "php-curl-class/php-curl-class": "^8.1"
+    },
+    "require-dev": {
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~5.0",
+        "phpspec/phpspec": "~2.1",
+        "friendsofphp/php-cs-fixer": "^2.3",
+        "phpmetrics/phpmetrics": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {"BlockMatrix\\EosRpc\\": ["src/"]}
+    },
+    "autoload-dev": {
+        "psr-4": {"BlockMatrix\\EosRpc\\": ["tests/"]}
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
+    }
+}
