@@ -7,6 +7,7 @@ a.primaryButton{
     background-color: $color-secondary;
     color: $background-color;
 }
+
 a.primaryButton::after{
     content: " ";
     position: absolute;
@@ -21,9 +22,10 @@ a.primaryButton::after{
     opacity: 0.5;
     transition: transform .2s;
     transition-timing-function: ease-in-out;
+    transform: translate(-4px, 4px);
     will-change: transform;
-    transform: translate(-4px, 4px)
 }
+
 a.primaryButton:hover::after{
-    transform: translate(-6px, 6px)
+    transform: translate(-6px, 6px);
 }
