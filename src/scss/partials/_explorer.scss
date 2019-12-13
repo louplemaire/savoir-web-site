@@ -1,7 +1,5 @@
 // Explore
 .exploreMain{
-    background-color: $color-primary;
-    height: 100vh;
     &__exploreContainer{
         display: flex;
         flex-direction: column;
@@ -45,6 +43,29 @@
                 transition-timing-function: ease-in-out;
                 transform: translate(-4px, 4px);
                 will-change: transform;
+                &__list{
+                    list-style: none;
+                    &__line{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        padding: 16px 0px;
+                        cursor: pointer;
+                        &__info{
+                            display: flex;
+                            flex-direction: row;
+                            &__name{
+                                margin-right: 8px;
+                            }
+                            &__id{
+                                opacity: 0.7;
+                            }
+                        }
+                        &__number{
+                            opacity: 0.7;
+                        }
+                    }
+                }
             }
         }
         &__tokenTraffic{
@@ -85,9 +106,20 @@
             }
         }
         &__lastTokenTraffic{
+            position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
+            &__backgroundExplorer{
+                position: absolute;
+                top: -40px;
+                left: 0;
+                z-index: -100;
+                width: 100vw;
+                height: 100vh;
+                background: no-repeat url('../../../assets/images/background-explorer.svg');
+                background-size: cover;
+            }
             &__title{
                 color: $background-color;
                 font-family: $font-subtitle;
@@ -131,4 +163,17 @@
             }
         }
     }
+}
+.subResearcherOpen{
+    display: inline-table;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    z-index: 100;
+    margin-top: 48px;
+    padding: 0px 16px;
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+.invisible{
+    display: none;
 }
