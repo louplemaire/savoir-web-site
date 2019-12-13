@@ -1,5 +1,18 @@
 .landingMain{
     &__middleContainer{
-        width: 100px;
+        width: 30vw;
+        margin: 0 auto;
+        text-align: center;
+        &__landingTitle{
+            font-size: $font-size-title;
+            font-family: $font-title;
+        }
+        p{
+            font-family: $font-primary;
+            font-size: $font-size-body;
+        }
+        .primaryButton{
+            display: inline-block;
+        }
     }
 }
