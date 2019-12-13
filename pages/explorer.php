@@ -1,4 +1,6 @@
 <main class="exploreMain">
+    <!-- H1 -->
+    <h1>Retroubver les utilisateurs de SAVOIR et explorer leur profil</h1>
     <!-- Explorer -->
     <div class="exploreMain__exploreContainer">
         <div class="exploreMain__exploreContainer__explorer">
