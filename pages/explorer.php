@@ -6,6 +6,7 @@
             <div class="exploreMain__exploreContainer__explorer__subResearcher"></div>
         </div>
     </div>
+    <!-- Info -->
     <div class="exploreMain__exploreContainer__tokenTraffic">
         <div class="exploreMain__exploreContainer__tokenTraffic__info">
             <div class="exploreMain__exploreContainer__tokenTraffic__info__number">167 000</div>
@@ -16,6 +17,7 @@
             <div>le sujet tendance cette semaine</div>
         </div>
     </div>
+    <!-- Last traffic-->
 </main>
 
 
