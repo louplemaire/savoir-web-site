@@ -1,3 +1,4 @@
+<div class="backgroundContainer"></div>
 <main class="landingMain">
     <!-- <img class="landingBackgroundWave" src="assets/images/backgrounds_landing/fondegrade2.png" alt="background">  -->
     <div class="landingBackgroundContainer"></div>
