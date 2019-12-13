@@ -172,6 +172,8 @@
     padding: 0px 16px;
     opacity: 1;
     transform: translate(0px, 0px);
+    transition: transform 0s;
+    will-change: transform;
 }
 .invisible{
     display: none;
