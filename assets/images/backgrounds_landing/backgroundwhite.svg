@@ -1,14 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1449.742" height="909.019" viewBox="0 0 1449.742 909.019">
-  <defs>
-    <filter id="background_blanc" x="0" y="0" width="1449.742" height="909.019" filterUnits="userSpaceOnUse">
-      <feOffset dy="10" input="SourceAlpha"/>
-      <feGaussianBlur stdDeviation="25" result="blur"/>
-      <feFlood flood-opacity="0.2"/>
-      <feComposite operator="in" in2="blur"/>
-      <feComposite in="SourceGraphic"/>
-    </filter>
-  </defs>
-  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#background_blanc)">
-    <path id="background_blanc-2" data-name="background blanc" d="M447.114,1193.807v732.533s-52.249-41.642,271.91-41.642c161.43,0,334.717,49.838,590.9,60.249s433.828-18.607,433.828-18.607V1193.807s-138.521-12.657-357.106,0-282.351,50.626-517.234,50.626S447.114,1193.807,447.114,1193.807Z" transform="translate(-369.01 -1123.18)" fill="#faf8f8"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1287.92" height="768.121" viewBox="0 0 1287.92 768.121"><path d="M461.791,1193.9s-1.911,594.389,0,762.4c1.2-5.854,45.981-68.766,258.931-71.605s338.916,49.963,592.867,60.249c257.036,10.41,435.273-18.607,435.273-18.607V1193.807s-138.982-12.657-358.3,0-283.292,50.626-518.957,50.626S461.791,1193.9,461.791,1193.9Z" transform="translate(-460.942 -1188.181)" fill="#faf8f8"/></svg>

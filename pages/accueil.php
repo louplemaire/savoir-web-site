@@ -12,7 +12,7 @@
         </div>
     </div>
     <section class="landingMain__landingFirstSection">
-        <img src="assets/images/backgrounds_landing/backgroundwhite.png" alt="background" class="landingMain__landingFirstSection__firstSectionWave">
+        <img src="assets/images/backgrounds_landing/backgroundwhite.svg" alt="background" class="landingMain__landingFirstSection__firstSectionWave">
         <h4 class="landingFirstSection__title">
             SAVOIR, faire grandir l'économie de la connaissance
         </h4>

@@ -1,6 +1,6 @@
 body{
     background-image: url("/assets/images/backgrounds_landing/fondegrade2.png");
-    background-size: 130% 120%;
+    background-size: 120% 120%;
     background-position: -2vw 0;
 }
 .landingMain{
@@ -16,12 +16,11 @@ body{
     }
     &__landingContainer{
         width: 100vw;
-        height: 40vh;
+        height: 60vh;
         display: flex;
         justify-content: center;
         align-items: center;
         &__middleContainer{
-            margin-top: 30vh;
             width: 20vw;
             text-align: center;
             &__landingTitle{
@@ -41,10 +40,10 @@ body{
     }
     &__landingFirstSection{
         &__firstSectionWave{
-            transform: scaleY(0.8);
+            width: 100%;
             position: absolute;
-            left: 0;
-            right: 0;
+            top: 100vh;
+
         }
     }
 }
