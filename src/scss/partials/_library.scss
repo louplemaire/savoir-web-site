@@ -34,3 +34,17 @@ a.primaryButton:hover::after{
 h1{
     display: none;
 }
+
+h2{
+    font-size: $font-size-title;
+    font-family: $font-title;
+}
+
+h3{
+    font-size: $font-size-subtitle;
+    font-family: $font-title;
+}
+p{
+    font-family: $font-primary;
+    font-size: $font-size-body;
+}

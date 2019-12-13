@@ -1,10 +1,11 @@
 .backgroundContainer{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-image: url("/assets/images/backgrounds_landing/fondegrade2.png");
     background-size: 120% 120%;
     background-position: -2vw 0;
+    z-index: -200;
 }
 .landingMain{
     display: flex;
@@ -27,13 +28,9 @@
             width: 20vw;
             text-align: center;
             &__landingTitle{
-                font-size: $font-size-title;
-                font-family: $font-title;
                 margin-bottom: 16px;
             }
             p{
-                font-family: $font-primary;
-                font-size: $font-size-body;
                 margin-bottom: 80px;
             }
             .primaryButton{
@@ -42,11 +39,35 @@
         }
     }
     &__landingFirstSection{
+        margin-top: 40vh;
+        width: 100%;
+        text-align: center;
         &__firstSectionWave{
             width: 100%;
+            left: 0;
             position: absolute;
             top: 100vh;
-
+            z-index: -100;
         }
+        &__subtitle{
+            font-size: $font-size-subtitle;
+            color: $text-color;
+        }
+        &__iconsList{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
+
+.iconContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        margin-right: 16px;
     }
 }
