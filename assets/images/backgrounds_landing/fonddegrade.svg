@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1830.543" height="954.34" viewBox="0 0 1830.543 954.34">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.763" y2="0.9" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#662483"/>
+      <stop offset="1" stop-color="#29235c"/>
+    </linearGradient>
+  </defs>
+  <g id="Fond_dégradé" data-name="Fond dégradé" transform="translate(451.993 56.465)">
+    <path id="Tracé_56" data-name="Tracé 56" d="M1903.149,5345.081s259.991,37.766,557.5,33.331,372.6-41.8,689.322-47.408,583.717,23.784,583.717,23.784l-.459-930.354s-221.279,515.4-679.266,699.729-1150.818,28.8-1150.818,28.8Z" transform="translate(-2355.142 -4480.899)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
