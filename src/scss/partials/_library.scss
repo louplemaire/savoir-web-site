@@ -29,3 +29,8 @@ a.primaryButton::after{
 a.primaryButton:hover::after{
     transform: translate(-6px, 6px);
 }
+
+// H1 display none
+h1{
+    display: none;
+}
