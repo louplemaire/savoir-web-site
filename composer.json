@@ -1,8 +1,0 @@
-{
-    "name": "savoir/savoir",
-    "description": "Projet Savoir Hetic",
-    "type": "project",
-    "require": {
-        "manamine/php-eos-rpc-sdk": "^1.5"
-    }
-}
