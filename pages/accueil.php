@@ -27,8 +27,7 @@
             </div>
             <div class="landingMain__landingFirstSection__iconsList__handsContainer iconContainer">
                 <img src="/assets/images/backgrounds_landing/hands-icon.svg" alt="">
-                <p>Un indicateur de développement 
-fiable</p>
+                <p>Un indicateur de développement fiable</p>
             </div>
         </div>
     </section>
