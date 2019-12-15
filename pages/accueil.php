@@ -50,4 +50,7 @@
         </div>
         <a href="#" class="primaryButton">Créer un compte</a>
     </section>
+    <section class="landingMain__landingSecondSection">
+        <img src="assets/images/backgrounds_landing/bluewavebg.svg" alt="background" class="blueWaveBackground">
+    </section>
 </main>
