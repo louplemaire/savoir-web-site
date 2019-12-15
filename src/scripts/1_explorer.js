@@ -6,8 +6,9 @@ const subResearcher = document.querySelector('.exploreMain__exploreContainer__ex
 const researcherList = document.querySelector('.exploreMain__exploreContainer__explorer__subResearcher__list')
 const subResearcherOpen = document.querySelector('.subResearcherOpen')
 const invisible = document.querySelector('.invisible')
-
-researcher.addEventListener('click', () => {
-    subResearcher.classList.toggle('subResearcherOpen')
-    researcherList.classList.toggle('invisible')
-})
+if (researcher) {
+    researcher.addEventListener('click', () => {
+        subResearcher.classList.toggle('subResearcherOpen')
+        researcherList.classList.toggle('invisible')
+    })
+}
