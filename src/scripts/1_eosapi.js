@@ -1,12 +1,13 @@
 class EosApi {
 
     constructor() {
+        // this.apiUrl = 'https://eos.greymass.com'
         this.apiUrl = 'http://213.202.230.42:8888'
         this.code = 'projetsavoir'
         this.symbol = 'SOR'
     }
 
-    formatSorTokens(amount) {
+    static formatSorTokens(amount) {
         return parseFloat(amount) * 10000
     }
 
@@ -30,7 +31,7 @@ class EosApi {
             'symbol': this.symbol
         }
         this.post('chain/get_currency_balance',options,(data) => {
-            handler(this.formatSorTokens(data[0]))
+            handler(EosApi.formatSorTokens(data[0]))
         })
     }
 
@@ -41,7 +42,7 @@ class EosApi {
             'symbol': this.symbol
         }
         this.post('chain/get_currency_stats',options,(data) => {
-            const sorSupply = this.formatSorTokens(data["SOR"]["supply"])
+            const sorSupply = EosApi.formatSorTokens(data["SOR"]["supply"])
             this.getUserSorBalance('projetsavoir',(balance) => {
                 const livingTokens = sorSupply - balance
                 handler(livingTokens)
@@ -49,12 +50,37 @@ class EosApi {
         })
     }
 
-    getLastSorTransactions() {
-        // Return an array of the 10/20 last SAVOIR transactions
+    getSorTransactions(account,handler,pos = -1) {
+        const options = {
+            'account_name':account,
+            'pos':pos
+        }
+        this.post('history/get_actions',options,(data) => {
+            const transactions = data["actions"].reduce((result,data) => {
+                const transaction = new EosTransaction(data,account)
+                if (!transaction.useless) {
+                    result.push(transaction)
+                }
+                return result
+            },[])
+            handler(transactions)
+        })
+    }
+
+    // Return an array of the 20 last SAVOIR transactions
+    getLastSorTransactions(handler) {
+        this.getSorTransactions('projetsavoir',(transactions) => {
+            handler(transactions)
+        })
     }
 
     getUserFullProfil() {
         // return a user object with each category and all transactions
+    }
+
+    // Cet current trending topic
+    getTrendingTopic() {
+        return 'Blockchain'
     }
 
 }
@@ -62,8 +88,11 @@ class EosApi {
 let api = new EosApi
 
 api.getUserSorBalance('hugoleroy123', (balance) => {
-    console.log(balance)
+    console.log(`hugoleroy123 SOR tokens : ${balance}`)
 })
 api.getSorCurrentSupply((supply) => {
-    console.log(supply)
+    console.log(`Total SOR tokens supplied : ${supply}`)
 })
+console.log(api.getTrendingTopic())
+
+// api.getLastSorTransactions()
