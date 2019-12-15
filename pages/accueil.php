@@ -13,9 +13,9 @@
     </div>
     <section class="landingMain__landingFirstSection">
         <img src="assets/images/backgrounds_landing/backgroundwhite.svg" alt="background" class="landingMain__landingFirstSection__firstSectionWave">
-        <h4 class="landingFirstSection__subtitle">
+        <h3 class="landingFirstSection__subtitle">
             SAVOIR, faire grandir l'économie de la connaissance
-        </h4>
+        </h3>
         <div class="landingMain__landingFirstSection__iconsList">
             <div class="landingMain__landingFirstSection__iconsList__brainContainer iconContainer">
                 <img src="/assets/images/backgrounds_landing/brain-icon.svg" alt="">
@@ -29,6 +29,11 @@
                 <img src="/assets/images/backgrounds_landing/hands-icon.svg" alt="">
                 <p>Un indicateur de développement fiable</p>
             </div>
+        </div>
+        <div class="landingMain__landingFirstSection__landingWhitePanels">
+            <div class="infobar"></div>
+            <div class="infobar"></div>
+            
         </div>
     </section>
 </main>
