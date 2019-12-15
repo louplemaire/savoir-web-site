@@ -52,5 +52,12 @@
     </section>
     <section class="landingMain__landingSecondSection">
         <img src="assets/images/backgrounds_landing/bluewavebg.svg" alt="background" class="blueWaveBackground">
+        <h3 class="landingMain__landingSecondSection__landingSecondTitle">Devenir acteur de certification</h3>
+        <div class="landingMain__landingSecondSection__secondSectionIconContainer">
+            <img src="assets/images/backgrounds_landing/code_icon.svg" alt="code symbol">
+            <p>Profitez de la blockchain pour certifier le savoir que vous avez 
+transmis autour de vous via une API simple et gratuite. Nous vous assistons même dans sa mise en place.</p>
+        </div>
+        <a href="" class="primaryButton">Intégrer l'API SAVOIR</a>
     </section>
 </main>

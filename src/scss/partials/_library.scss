@@ -12,7 +12,7 @@ a.primaryButton{
 a.primaryButton::after{
     content: " ";
     position: absolute;
-    z-index: -100;
+    z-index: -1;
     display: block;
     top: 0;
     left: 0;

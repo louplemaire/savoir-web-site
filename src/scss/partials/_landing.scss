@@ -16,7 +16,7 @@
         position: absolute;
         max-width: 100%;
         transform: scale(1.2);
-        margin-top: -6vh;
+        margin-top: -20vh;
     }
     &__landingContainer{
         width: 100vw;
@@ -39,7 +39,7 @@
         }
     }
     &__landingFirstSection{
-        margin-top: 40vh;
+        margin-top: 50vh;
         width: 100%;
         text-align: center;
         &__firstSectionWave{
@@ -66,21 +66,46 @@
             justify-content: space-around;
         }
         a{
-            margin-top: 80px;;
+            margin-top: 160px;;
         }
     }
     &__landingSecondSection{
-        margin-top: 40vh;
+        margin-top: 30vh;
         width: 100%;
         height: 100vh;
         text-align: center;
-        img{
+        img.blueWaveBackground{
+            margin-top: -18vh;
             position: absolute;
-            max-width: 100%;
-            transform: scaleX(2);
+            z-index: -20;
+            transform: scaleX(
+                2);
             left: 0;
             right: 0;
         }
+        h3{
+            font-family: $font-title;
+            color: $background-color;
+        }
+        &__secondSectionIconContainer{
+            margin: 0 auto;
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            img{
+                margin-right: 40px;
+            }
+            p{
+                color: $background-color;
+            }
+
+        }
+        a{
+            margin-top: 80px;
+        }
+        
     }
 }
 
@@ -93,4 +118,9 @@
     img{
         margin-right: 16px;
     }
+}
+
+.secondSectionIconContainer{
+    width: 50vw;
+
 }
