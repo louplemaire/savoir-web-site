@@ -1,5 +1,6 @@
 // Primary button
 a.primaryButton{
+    display: inline-block;
     position: relative;
     padding: 16px 32px;
     border-radius: 10px;
@@ -40,8 +41,16 @@ a.primaryButton:hover::after{
     padding: 16px 6vw;
     border-radius: 5px;
     background-color: $background-color;
-
+    
+    &__number,&__subject{
+        margin-right: 8px;
+        font-family: $font-size-title;
+        font-weight: bold;
+        font-size: $font-size-subtitle;
+    }
 }
+
+
 .infobar::after{
     content: " ";
     display: block;

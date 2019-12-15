@@ -31,9 +31,23 @@
             </div>
         </div>
         <div class="landingMain__landingFirstSection__landingWhitePanels">
-            <div class="infobar"></div>
-            <div class="infobar"></div>
-            
+            <div class="infobar">
+                <div class="infobar__number">
+                    167 000
+                </div>
+                <div>
+                    tokens SAVOIR en circulation
+                </div>
+            </div>
+            <div class="infobar">
+                <div class="infobar__number">
+                    "Blockchain"
+                </div>
+                <div>
+                    le sujet tendance de cette semaine
+                </div>
+            </div>
         </div>
+        <a href="#" class="primaryButton">Créer un compte</a>
     </section>
 </main>
