@@ -26,13 +26,13 @@
         </div>
     </div>
     <!-- Info -->
-    <div class="exploreMain__exploreContainer__tokenTraffic">
-        <div class="exploreMain__exploreContainer__tokenTraffic__info">
-            <div class="exploreMain__exploreContainer__tokenTraffic__info__number">167 000</div>
+    <div class="exploreMain__exploreContainer__tokenTraffic tokenTraffic">
+        <div class="tokenTraffic__info">
+            <div class="tokenTraffic__info__number">167 000</div>
             <div>tokens SAVOIR en circulation</div>
         </div>
-        <div class="exploreMain__exploreContainer__tokenTraffic__info">
-            <div class="exploreMain__exploreContainer__tokenTraffic__info__subject">“Blockchain”</div>
+        <div class="tokenTraffic__info">
+            <div class="tokenTraffic__info__subject">“Blockchain”</div>
             <div>le sujet tendance cette semaine</div>
         </div>
     </div>
