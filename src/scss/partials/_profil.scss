@@ -80,10 +80,10 @@
     &__detail{
         position: relative;
         width: 43vw;
-        height: 100vh;
-        padding-top: 10px;
+        padding: 10px 0px 40px 0px;
         border-radius: 5px;
         overflow: hidden;
+        overflow-y: auto;
         &__background{
             position: absolute;
             z-index: -100;
@@ -184,8 +184,15 @@
 }
 .center{
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     z-index: 200;
+}
+.invisible{
+    display: none;
+}
+.overflowHidden{
+    overflow-y: hidden;
+    height: calc(100vh - 80px);
 }
