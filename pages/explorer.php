@@ -4,9 +4,9 @@
     <!-- Explorer -->
     <div class="exploreMain__exploreContainer">
         <div class="exploreMain__exploreContainer__explorer">
-            <input class="exploreMain__exploreContainer__explorer__researcher" type="text" placeholder="Recherchez un utilisateur…">
-            <div class="exploreMain__exploreContainer__explorer__subResearcher">
-                <ul class="exploreMain__exploreContainer__explorer__subResearcher__list invisible">
+            <input class="exploreMain__exploreContainer__explorer__researcher js-researcher" type="text" placeholder="Recherchez un utilisateur…">
+            <div class="exploreMain__exploreContainer__explorer__subResearcher js-subResearcher">
+                <ul class="exploreMain__exploreContainer__explorer__subResearcher__list js-subResearcher-list invisible">
                     <li class="exploreMain__exploreContainer__explorer__subResearcher__list__line">
                         <div class="exploreMain__exploreContainer__explorer__subResearcher__list__line__info">
                             <div class="exploreMain__exploreContainer__explorer__subResearcher__list__line__info__name">Nicolas Decreton</div>
