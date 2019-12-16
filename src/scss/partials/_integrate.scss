@@ -4,6 +4,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 80px ;
+    height: 100%;
     &__integrateLeftSection{
         width: 50%;
         display: flex;
@@ -19,7 +20,7 @@
                 position: absolute;
                 background-color: $color-secondary;
                 width: 4px;
-                height: 150%;
+                height: 138%;
                 margin-top: 8px;
             }
             &__rightContainer{
@@ -56,17 +57,74 @@
         }
      }
      &__bottomSection{
+         margin-top: 20vh;
          width: 100%;
          img{
+             margin-top: -20vh;
              position: absolute;
              width: 100%;
              transform: scaleX(1.2);
              left: -1vw;
              z-index: -1;
          }
+         &__formContainer{
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             &__formTitle{
+                 color: $background-color;
+             }
+             form{
+                 width: 25vw;
+                 color: $background-color;
+                 display: flex;
+                 flex-direction: column;
+                 label{
+                     margin-top: 8px;
+                 }
+                 a{
+                    width: 6vw;
+                    margin-top:40px;
+                }
+             }
+         }
      }
 }
 
 .buttonBulletPoint{
     margin-top: 20px;
+}
+.bulletPoint{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: $color-secondary;
+    margin-left: -8px;
+    margin-top: 8px;
+}
+
+.input{
+    background-color: $color-primary;
+    color: $background-color;
+    margin-top: 0;
+    border: solid $background-color 3px;
+    height: 40px;
+    -webkit-appearance: none;
+    align-items: center;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: $font-primary;
+    padding-left: 16px;
+
+}
+::placeholder{
+    color: $background-color;
+    opacity: 1;
+    font-size: 12px;
+}
+
+#textField{
+    height: 100px;
 }

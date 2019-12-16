@@ -33,3 +33,4 @@
         <img src="/assets/images/account_icon.svg" alt="">
     </section>
 </main>
+<!-- <img class="accountMainBackground" src="assets/images/backgrounds_landing/footerwaveblue.svg" alt=""> -->

@@ -35,5 +35,18 @@ avec notre aide</h3>
     </section>
     <section class="integrateMain__bottomSection">
          <img src="assets/images/backgrounds_landing/bluewavebg.svg" alt="background">
+         <div class="bulletPoint"></div>
+         <div class="integrateMain__bottomSection__formContainer">
+             <h3 class="integrateMain__bottomSection__formContainer__formTitle">Parlons-en</h3>
+             <form action="">
+                <label for="name">Nom (personnel ou organisation)</label>
+                <input class="input" type="text" name="name" id="name">
+                <label for="email" class="">Adresse mail</label>
+                <input class="input" type="email" name="email" id="email">
+                <label for="text" class="">Votre domaine d'activité</label>
+                <input class="input" type="text" name="text" id="textField">
+                <a href="#" class="primaryButton">Envoyer</a>
+             </form>
+         </div>
     </section>
 </main>
