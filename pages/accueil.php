@@ -30,17 +30,17 @@
                 <p>Un indicateur de développement fiable</p>
             </div>
         </div>
-        <div class="landingMain__landingFirstSection__landingWhitePanels">
-            <div class="infobar">
-                <div class="infobar__number">
+        <div class="landingMain__landingFirstSection__landingWhitePanels tokenTraffic">
+            <div class="tokenTraffic__info">
+                <div class="tokenTraffic__info__number">
                     167 000
                 </div>
                 <div>
                     tokens SAVOIR en circulation
                 </div>
             </div>
-            <div class="infobar">
-                <div class="infobar__number">
+            <div class="tokenTraffic__info">
+                <div class="tokenTraffic__info__subject">
                     "Blockchain"
                 </div>
                 <div>
@@ -58,6 +58,6 @@
             <p>Profitez de la blockchain pour certifier le savoir que vous avez 
 transmis autour de vous via une API simple et gratuite. Nous vous assistons même dans sa mise en place.</p>
         </div>
-        <a href="" class="primaryButton">Intégrer l'API SAVOIR</a>
+        <a href="#" class="primaryButton">Intégrer l'API SAVOIR</a>
     </section>
 </main>
