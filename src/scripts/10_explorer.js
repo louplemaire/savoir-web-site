@@ -1,9 +1,9 @@
 // Explorer
 
 // Open subresearcher
-const researcher = document.querySelector('.exploreMain__exploreContainer__explorer__researcher')
-const subResearcher = document.querySelector('.exploreMain__exploreContainer__explorer__subResearcher')
-const researcherList = document.querySelector('.exploreMain__exploreContainer__explorer__subResearcher__list')
+const researcher = document.querySelector('.js-researcher')
+const subResearcher = document.querySelector('.js-subResearcher')
+const researcherList = document.querySelector('.js-subResearcher-list')
 const subResearcherOpen = document.querySelector('.subResearcherOpen')
 const invisible = document.querySelector('.invisible')
 if (researcher) {
