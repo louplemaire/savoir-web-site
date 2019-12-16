@@ -4,6 +4,6 @@
         <li><a href="/explorer">Explorer</a></li>
         <li><a href="/account">Créer un compte</a></li>
         <li><a href="/integrate">Intégrer SAVOIR</a></li>
-        <li><a href="#">À propos</a></li>
+        <li><a href="/about">À propos</a></li>
     </ul>
 </header>

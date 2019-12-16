@@ -1,0 +1,58 @@
+.aboutMain{
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    &__aboutFirstSection{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &__leftContainer{
+            width: 40%;
+        }
+    }
+    &__aboutSecondSection{
+        padding-top: 18vh;
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        img{
+            margin-top: -12vh;
+            position: absolute;
+            z-index: -1;
+            transform: scaleX(1.8);
+        }
+        h3.sectionTitle{
+            color: $background-color;
+            margin-bottom: 40px;
+        }
+        &__firstRow{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-bottom: 32px;
+            &__profile{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                color: $background-color;
+                &__image{
+                    width: 80px;
+                    height: 80px;
+                    background-color: $background-color;
+                    border-radius: 40px;
+                    margin-right: 16px;
+                }
+                &__text{
+                    text-align: left;
+                    width: 16vw;
+                }
+            }
+        }
+    }
+}
+
+.lastProfile{
+    margin: 0 auto;
+}
