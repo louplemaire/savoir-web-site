@@ -8,17 +8,17 @@
                 <div class="accountMain__accountLeftSection__container__rightContainer__paragraph">
                     <div class="accountMain__accountLeftSection__container__rightContainer__paragraph__bulletPoint"></div>
                     <h3>Une technologie basée sur la blockchain EOS</h3>
-                    <p>La blockchain EOS est une plateforme décentralisée et sécurisée permettant de déployer des interactions automatisées entre ses utilisateurs.</p>
+                    <p>La blockchain EOS est une plateforme décentralisée et sécurisée permettant de déployer des interactions automatisées entre ses utilisateurs</p>
                 </div>
                 <div class="accountMain__accountLeftSection__container__rightContainer__paragraph">
                 <div class="accountMain__accountLeftSection__container__rightContainer__paragraph__bulletPoint"></div>
                     <h3>Un compte SAVOIR est donc un wallet EOS</h3>
-                    <p>Les savoirs accumulés sur votre compte sont enregistrés dans votre wallet EOS, un outil simple d’utilisation. Il est possible de lier un wallet déjà existant à votre compte SAVOIR.</p>
+                    <p>Les savoirs accumulés sur votre compte sont enregistrés dans votre wallet EOS, un outil simple d’utilisation. Il est possible de lier un wallet déjà existant à votre compte SAVOIR</p>
                 </div>
                 <div class="accountMain__accountLeftSection__container__rightContainer__paragraph">
                 <div class="accountMain__accountLeftSection__container__rightContainer__paragraph__bulletPoint"></div>
                 <h3>Le cout d’un wallet EOS</h3>
-                <p>Le wallet EOS est un outil unique et nominatif. Son utilisation requiert de payer une seule et unique fois lors de la création de votre compte  afin de réserver le nom de celui-ci dans les données de la blockchain EOS.</p>
+                <p>Le wallet EOS est un outil unique et nominatif. Son utilisation requiert de payer une seule et unique fois lors de la création de votre compte  afin de réserver le nom de celui-ci dans les données de la blockchain EOS</p>
                 </div>
                 <div class="accountMain__accountLeftSection__container__rightContainer__paragraph">
                 <div class="accountMain__accountLeftSection__container__rightContainer__paragraph__bulletPoint buttonBulletPoint"></div>

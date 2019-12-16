@@ -30,7 +30,7 @@
                 <p>Un indicateur de développement fiable</p>
             </div>
         </div>
-        <div class="landingMain__landingFirstSection__landingWhitePanels tokenTraffic">
+        <div class="tokenTraffic">
             <div class="tokenTraffic__info">
                 <div class="tokenTraffic__info__number">
                     167 000

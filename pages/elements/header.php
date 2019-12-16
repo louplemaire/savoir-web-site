@@ -3,7 +3,7 @@
     <ul class="header__menu">
         <li><a href="/explorer">Explorer</a></li>
         <li><a href="/account">Créer un compte</a></li>
-        <li><a href="#">Intégrer SAVOIR</a></li>
+        <li><a href="/integrate">Intégrer SAVOIR</a></li>
         <li><a href="#">À propos</a></li>
     </ul>
 </header>

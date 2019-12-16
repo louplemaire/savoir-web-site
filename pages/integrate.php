@@ -1,35 +1,39 @@
-<main class="accountMain">
-    <section class="accountMain__accountLeftSection">
-        <h2 class="accountTitle">Créer un compte SAVOIR</h2>
-        <div class="accountMain__accountLeftSection__container">
-            <div class="accountMain__accountLeftSection__container__verticalBar">
+<main class="integrateMain">
+    <section class="integrateMain__integrateLeftSection">
+        <h2 class="integrateTitle">Intégrer SAVOIR</h2>
+        <div class="integrateMain__integrateLeftSection__container">
+            <div class="integrateMain__integrateLeftSection__container__verticalBar">
             </div>
-            <div class="accountMain__accountLeftSection__container__rightContainer">
-                <div class="accountMain__accountLeftSection__container__rightContainer__paragraph">
-                    <div class="accountMain__accountLeftSection__container__rightContainer__paragraph__bulletPoint"></div>
-                    <h3>Une technologie basée sur la blockchain EOS</h3>
-                    <p>La blockchain EOS est une plateforme décentralisée et sécurisée permettant de déployer des interactions automatisées entre ses utilisateurs.</p>
+            <div class="integrateMain__integrateLeftSection__container__rightContainer">
+                <div class="integrateMain__integrateLeftSection__container__rightContainer__paragraph">
+                    <div class="integrateMain__integrateLeftSection__container__rightContainer__paragraph__bulletPoint"></div>
+                    <h3>Valorisez vos employés</h3>
+                    <p>Montrez les bénéfices de l’apprentissage par formation et le progrès au sein de l’entreprise</p>
                 </div>
-                <div class="accountMain__accountLeftSection__container__rightContainer__paragraph">
-                <div class="accountMain__accountLeftSection__container__rightContainer__paragraph__bulletPoint"></div>
-                    <h3>Un compte SAVOIR est donc un wallet EOS</h3>
-                    <p>Les savoirs accumulés sur votre compte sont enregistrés dans votre wallet EOS, un outil simple d’utilisation. Il est possible de lier un wallet déjà existant à votre compte SAVOIR.</p>
+                <div class="integrateMain__integrateLeftSection__container__rightContainer__paragraph">
+                <div class="integrateMain__integrateLeftSection__container__rightContainer__paragraph__bulletPoint"></div>
+                    <h3>Encouragez vos élèves</h3>
+                    <p>Partagez la qualité de l’enseignement de votre établissement et l’initiative de vos élèves</p>
                 </div>
-                <div class="accountMain__accountLeftSection__container__rightContainer__paragraph">
-                <div class="accountMain__accountLeftSection__container__rightContainer__paragraph__bulletPoint"></div>
-                <h3>Le cout d’un wallet EOS</h3>
-                <p>Le wallet EOS est un outil unique et nominatif. Son utilisation requiert de payer une seule et unique fois lors de la création de votre compte  afin de réserver le nom de celui-ci dans les données de la blockchain EOS.</p>
+                <div class="integrateMain__integrateLeftSection__container__rightContainer__paragraph">
+                <div class="integrateMain__integrateLeftSection__container__rightContainer__paragraph__bulletPoint"></div>
+                <h3>Rankez votre organisation</h3>
+                <p>Montrez l’influence de votre organisation ainsi que son rayonnement de connaissances à toutes les échelles</p>
                 </div>
-                <div class="accountMain__accountLeftSection__container__rightContainer__paragraph">
-                <div class="accountMain__accountLeftSection__container__rightContainer__paragraph__bulletPoint buttonBulletPoint"></div>
-                    <a href="#" class="primaryButton">
-                        Créer un wallet EOS
-                    </a>
+                <div class="integrateMain__integrateLeftSection__container__rightContainer__paragraph">
+                    <div class="integrateMain__integrateLeftSection__container__rightContainer__paragraph__bulletPoint"></div>
+                    <h3>Intégrez SAVOIR gratuitement
+avec notre aide</h3>
+                    <p>Grâce à notre API, intégrez gratuitement SAVOIR à votre site, et bénéficier d’une assistance gratuite afin de vous aider à la mise en place </p>
+
                 </div>
             </div>
         </div>
     </section>
-    <section class="accountMain__accountRightSection">
-        <img src="/assets/images/account_icon.svg" alt="">
+    <section class="integrateMain__integrateRightSection">
+        <img src="assets/images/illustrations/knowledge_icon.svg" alt="woman thinking">
+    </section>
+    <section class="integrateMain__bottomSection">
+         <img src="assets/images/backgrounds_landing/bluewavebg.svg" alt="background">
     </section>
 </main>

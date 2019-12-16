@@ -20,6 +20,8 @@ body {
   color: $text-color;
   font-family: $font-primary;
   font-size: $font-size-body;
+  overflow-x: hidden;
+  width: 100vw;
 }
 ul{
   margin: 0;
