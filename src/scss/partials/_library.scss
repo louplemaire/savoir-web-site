@@ -70,7 +70,11 @@ a.primaryButton:hover::after{
     }
 }
 
-// H1 display none
+// Title
+h1,h2,h3{
+    margin: 0;
+}
+
 h1{
     display: none;
 }
