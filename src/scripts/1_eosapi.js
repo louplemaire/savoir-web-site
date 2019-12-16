@@ -95,4 +95,6 @@ api.getSorCurrentSupply((supply) => {
 })
 console.log(api.getTrendingTopic())
 
-// api.getLastSorTransactions()
+// api.getSorTransactions('g4zdamnxhege',(transactions) => {
+//     console.log(transactions)
+// })
