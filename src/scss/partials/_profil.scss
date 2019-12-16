@@ -1,0 +1,78 @@
+.profilMain{
+    &__info{
+        margin-top: 25px;
+        text-align: center;
+        &__name{
+            margin-bottom: 10px;
+        }
+    }
+    &__savoirs{
+        position: relative;
+        margin-top: 80px;
+        padding: 0px 80px 0px 80px;
+        &__backgroundProfil{
+            position: absolute;
+            top: -40px;
+            left: 0;
+            z-index: -100;
+            width: 100vw;
+            height: 100vh;
+            background: no-repeat url('../../../assets/images/background-explorer.svg');
+            background-size: cover;
+        }
+        &__title{
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            justify-content: space-between;
+            &__fakeDiv{
+                width: 200px;
+                height: 20px;
+            }
+            &__name{
+                margin-bottom: 20px;
+                text-align: center;
+                color: $background-color;
+            }
+            &__organize{
+                color: $background-color;
+                &__filter{
+                    margin-left: 4px;
+                    margin-right: 4px;
+                    font-family: $font-subtitle;
+                }
+            }
+        }
+        &__specificity{
+            &__list{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                list-style: none;
+                &__line{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 42vw;
+                    margin-top: 15px;
+                    padding: 16px 24px 16px 16px;
+                    border-radius: 5px;
+                    box-shadow: inset 0px 0px 10px rgba(0,0,0,.5);
+                    background-color: $background-color;
+                    &__info{
+                        &__expertise{
+                            font-family: $font-subtitle;
+                        }
+                    }
+                    &__number{
+                        font-family: $font-subtitle;
+                        font-size: $font-size-subtitle;
+                    }
+                }
+            }
+        }
+    }
+}
