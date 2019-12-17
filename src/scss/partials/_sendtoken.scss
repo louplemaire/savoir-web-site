@@ -1,12 +1,87 @@
 .sendtokenMain{
     padding-top: 90px;
     padding-left: 48px;
+    padding-right: 48px;
+    background-image: url("/assets/images/background_sendtoken.svg");
+    width: 100%;
+    height: 100vh;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
     &__progressBar{
+        display: flex;
         width: 100%;
         height: 5px;
         &__1{
             background: #662483;
+            width: 33.3333%;
+            height: 100%;
+        }
+        &__2{
+            background: #fdfdfd;
+            width: 33.3333%;
+            height: 100%;
+        }
+        &__3{
+            background: #fdfdfd;
+            width: 33.3333%;
+            height: 100%;
         }
     }
+    &__sendtokenLeftSection{
+        padding-top: 98px;
+        width: 50%;
+    }
+    &__sendtokenRightSection{
+        padding-top: 98px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+}
+.sendtokenContainerSection{
+    display: flex;
 }
 
+.inputsendtoken{
+    background: none;
+    color: $background-color;
+    margin-top: 0;
+    border: solid $background-color 3px;
+    height: 40px;
+    width: 50%;
+    -webkit-appearance: none;
+    align-items: center;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: $font-primary;
+    padding-left: 16px;
+    margin-bottom: 16px
+}
+
+.textsendtoken{
+    color: $background-color;
+}
+
+.form1__sendtoken{
+    color: $background-color
+}
+
+#checksend{
+    outline: none;
+    border-radius: 10px;
+    border: solid $background-color 3px;
+}
+
+#checksendtext{
+    color: $background-color;
+}
+
+
+
+.container__sendtokenButton{
+    margin-left: 20%;
+    margin-top: 24px;
+}
