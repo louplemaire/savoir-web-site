@@ -10,7 +10,6 @@
             <h3 class="profilMain__info__sorNumber">130SOR</h3>
         </div>
         <div class="profilMain__savoirs">
-            <div class="profilMain__savoirs__backgroundProfil"></div>
             <div class="profilMain__savoirs__title">
                 <div class="profilMain__savoirs__title__fakeDiv"></div>
                 <h3 class="profilMain__savoirs__title__name">Les savoirs de Nicolas</h3>
@@ -92,7 +91,7 @@
                     <div class="profilMain__detail__info__number">80 SOR</div>
                 </div>
                 <div class="profilMain__detail__token">
-                    <div class="profilMain__detail__token__backgroundDetail"></div>
+                    
                     <div class="profilMain__detail__token__title">
                         <h3>Savoirs “Dev Web”</h3>
                         <div class="profilMain__detail__token__title__organize">
