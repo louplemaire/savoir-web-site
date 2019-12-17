@@ -93,7 +93,6 @@ class EosApi {
     getSearchResults(search,handler) {
         const options = { 'search' : search }
         this.requestApi('get_users_for_search',options,(data) => {
-            console.log(data)
             const users = data.map((userData) => {
                 return new User(userData)
             })
@@ -102,8 +101,11 @@ class EosApi {
     }
 
     // Get user profil (token balance + category)
-    getUserFullProfil() {
-        // return a user object with each category and all transactions
+    getUserCategories(user,handler) {
+        const options = { 'account' : user }
+        this.requestApi('get_user_categories',options,(data) => {
+            handler(data)
+        })
     }
 
     // Get sor transactions for user for specific category
@@ -143,4 +145,8 @@ api.getLastSorTransactions((transactions) => {
 
 api.getSearchResults('n',(users) => {
     console.log(users)
+})
+
+api.getUserCategories('nicolas2decr',(categories) => {
+    console.log(categories)
 })
