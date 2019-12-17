@@ -12,7 +12,6 @@ transmission de connaissances</h3>
         <img src="assets/images/illustrations/working_icon.svg" alt="working woman">
 </section>
 <section class="aboutMain__aboutSecondSection">
-    <img src="/assets/images/backgrounds_landing/bluewavebg.svg" alt="background">
     <h3 class="sectionTitle">
         L'équipe SAVOIR
     </h3>
