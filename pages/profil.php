@@ -1,5 +1,5 @@
-<div class="js-overflowProfil overflowHidden">
-    <div class="greyFilter js-grey-filter"></div>
+<div class="js-overflowProfil">
+    <div class="greyFilter js-grey-filter invisible"></div>
     <!-- H1 -->
     <h1>Le profil d'un utilisateur de SAVOIR</h1>
     <!-- Profil -->
@@ -79,7 +79,7 @@
             </div>
         </div>
         <!-- Profil detail -->
-        <div class="center js-detail-window">
+        <div class="center js-detail-window invisible">
             <div class="profilMain__detail">
                 <div class="profilMain__detail__background"></div>
                 <div class="profilMain__detail__closeButton js-close-button">Close</div>
