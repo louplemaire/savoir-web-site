@@ -1,4 +1,4 @@
-<div class="backgroundContainer"></div>
+<div class="backgroundContainer js-mouseAnimated"></div>
 <main class="landingMain">
     <div class="landingBackgroundContainer"></div>
     <div class="landingMain__landingContainer">
@@ -51,7 +51,6 @@
         <a href="#" class="primaryButton">Créer un compte</a>
     </section>
     <section class="landingMain__landingSecondSection">
-        <img src="assets/images/backgrounds_landing/bluewavebg.svg" alt="background" class="blueWaveBackground">
         <h3 class="landingMain__landingSecondSection__landingSecondTitle">Devenir acteur de certification</h3>
         <div class="landingMain__landingSecondSection__secondSectionIconContainer">
             <img src="assets/images/backgrounds_landing/code_icon.svg" alt="code symbol">
