@@ -37,20 +37,7 @@
     <!-- Last traffic-->
     <div class="exploreMain__exploreContainer__lastTokenTraffic">
         <h3 class="exploreMain__exploreContainer__lastTokenTraffic__title">Les dernières transmissions de connaissances SAVOIR</h3>
-        <ul class="exploreMain__exploreContainer__lastTokenTraffic__list">
-            <li class="exploreMain__exploreContainer__lastTokenTraffic__list__line">
-                <div class="exploreMain__exploreContainer__lastTokenTraffic__list__line__date">
-                    11/12/2019 à 10h26
-                </div>
-                <div class="exploreMain__exploreContainer__lastTokenTraffic__list__line__deal">
-                    <div class="exploreMain__exploreContainer__lastTokenTraffic__list__line__deal__mention">
-                        <div class="exploreMain__exploreContainer__lastTokenTraffic__list__line__deal__mention__spec">“Conférence Histoire du numérique”</div>
-                        <div class="exploreMain__exploreContainer__lastTokenTraffic__list__line__deal__mention__destination">Jack Jobs -> Téa Gates</div>
-                    </div>
-                    <div class="exploreMain__exploreContainer__lastTokenTraffic__list__line__deal__value">2 SOR</div>
-                </div>
-            </li>
-        </ul>
+        <ul class="exploreMain__exploreContainer__lastTokenTraffic__list"></ul>
     </div>
 </main>
 
