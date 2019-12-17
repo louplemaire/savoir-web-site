@@ -12,6 +12,7 @@ a.primaryButton{
     text-decoration: none;
     background-color: $color-secondary;
     color: $background-color;
+    z-index: 1;
 }
 
 a.primaryButton::after{
