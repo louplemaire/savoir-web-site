@@ -36,7 +36,6 @@
     </div>
     <!-- Last traffic-->
     <div class="exploreMain__exploreContainer__lastTokenTraffic">
-        <div class="exploreMain__exploreContainer__lastTokenTraffic__backgroundExplorer"></div>
         <h3 class="exploreMain__exploreContainer__lastTokenTraffic__title">Les dernières transmissions de connaissances SAVOIR</h3>
         <ul class="exploreMain__exploreContainer__lastTokenTraffic__list">
             <li class="exploreMain__exploreContainer__lastTokenTraffic__list__line">
