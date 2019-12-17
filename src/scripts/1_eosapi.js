@@ -57,7 +57,11 @@ class EosApi {
             'symbol': this.symbol
         }
         this.post('chain/get_currency_balance',options,(data) => {
-            handler(EosApi.formatSorTokens(data[0]))
+            if (data.length > 0) {
+                handler(EosApi.formatSorTokens(data[0]))
+            } else {
+                handler(0)
+            }
         })
     }
 
