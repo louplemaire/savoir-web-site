@@ -22,8 +22,7 @@
                 </div>
                 <div class="integrateMain__integrateLeftSection__container__rightContainer__paragraph">
                     <div class="integrateMain__integrateLeftSection__container__rightContainer__paragraph__bulletPoint"></div>
-                    <h3>Intégrez SAVOIR gratuitement
-avec notre aide</h3>
+                    <h3>Intégrez SAVOIR gratuitement avec notre aide</h3>
                     <p>Grâce à notre API, intégrez gratuitement SAVOIR à votre site, et bénéficier d’une assistance gratuite afin de vous aider à la mise en place </p>
 
                 </div>
