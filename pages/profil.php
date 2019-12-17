@@ -6,8 +6,8 @@
     <main class="profilMain">
         <!-- Name -->
         <div class="profilMain__info">
-            <h2 class="profilMain__info__name">Nicolas Decreton</h2>
-            <h3 class="profilMain__info__sorNumber">130SOR</h3>
+            <h2 class="profilMain__info__name"></h2>
+            <h3 class="profilMain__info__sorNumber"></h3>
         </div>
         <div class="profilMain__savoirs">
             <div class="profilMain__savoirs__title">
