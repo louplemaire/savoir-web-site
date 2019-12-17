@@ -1,8 +1,6 @@
-<!-- <div class="backgroundContainer js-mouseAnimated"></div> -->
 <main class="landingMain">
-    <!-- <div class="landingBackgroundContainer"></div> -->
     <div class="landingMain__landingContainer">
-        <div class="landingMain__landingContainer__middleContainer">
+        <div class="landingMain__landingContainer__middleContainer js-mouseAnimated">
             <h2 class="landingMain__landingContainer__middleContainer__landingTitle">
             Apprenez,<br>
             Partagez.

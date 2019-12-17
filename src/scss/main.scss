@@ -11,6 +11,9 @@
 @import "partials/profil";
 
 @media screen and (orientation:portrait){
+  .js-mouseAnimated {
+    transform: none !important;
+  }
   @import "partials/responsive/landing";
   @import "partials/responsive/about";
   @import "partials/responsive/integrate";
