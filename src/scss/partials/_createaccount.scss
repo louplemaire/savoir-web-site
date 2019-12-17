@@ -1,0 +1,44 @@
+.createaccountMain {
+    display: flex;
+    background-image: url("/assets/images/background_createaccount.svg");
+    width: 100%;
+    height: 100vh;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    z-index: -200;
+    &__createaccountLeftSection{
+        padding: 96px;
+        &__paragraph{
+            width: 50%;
+        }
+    }
+
+}
+
+.createaccountMain__createaccountRightSection{
+    &__img{
+        margin: 48px;
+        margin-right: 96px;
+    }
+}
+
+.inputcreateaccount{
+    background: $background-color;
+    color: $background-color;
+    margin-top: 0;
+    border: solid $text-color 3px;
+    height: 40px;
+    width: 50%;
+    -webkit-appearance: none;
+    align-items: center;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: $font-primary;
+    padding-left: 16px;
+}
+
+.createaccountbutton{
+    margin-left: 160px;
+}
