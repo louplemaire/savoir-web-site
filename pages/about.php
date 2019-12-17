@@ -66,7 +66,7 @@ transmission de connaissances</h3>
                 </div>
                 <div class="aboutMain__aboutSecondSection__firstRow__profile__text__role">
                 Cryptomarketeur,<br>
-                Responsable marketing et animateur 2D
+                Marketing et animation 2D
                 </div>
             </div>
         </div>
