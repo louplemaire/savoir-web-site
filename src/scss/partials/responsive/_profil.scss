@@ -1,0 +1,65 @@
+.profilMain{
+    &__savoirs{
+        margin-top: 56px;
+        padding: 40px 16px;
+        &__title{
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            &__fakeDiv{
+                display: none;
+            }
+            &__name{
+                margin-bottom: 10px;
+                text-align: normal;
+            }
+            &__organize{
+                width: 28vw;
+                &__filter{
+                    margin-left: 0;
+                }
+            }
+        }
+        &__specificity{
+            &__list{
+                &__line{
+                    width: 92vw;
+                }
+            }
+        }
+    }
+    &__detail{
+        width: 100vw;
+        &__info{
+            margin: 15px 16px 56px 16px;
+        }
+        &__token{
+            &__title{
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                h3{
+                    margin-bottom: 10px;
+                }
+                &__organize{
+                    width: 28vw;
+                    &__filter{
+                        margin-left: 0;
+                    }
+                }
+            }
+            &__list{
+                &__line{
+                    width: 92vw;
+                    &__deal{
+                        &__mention{
+                            &__spec{
+                                width: 43vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
