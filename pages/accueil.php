@@ -6,7 +6,10 @@
             Partagez.
             </h2>
             <p class="landingMain__landingContainer__middleContainer__landingMainText">Devenez acteur de la nouvelle économie de la connaissance</p>
-            <a href="/explorer" class="primaryButton">Découvrir SAVOIR</a>
+            <div class="landingMain__landingContainer__middleContainer__buttonContainer">
+                <a href="/explorer" class="secondaryButton">Trouver un profil</a>
+                <a href="/#" class="primaryButton">Découvrir SAVOIR</a>
+            </div>
         </div>
     </div>
     <section class="landingMain__landingFirstSection">

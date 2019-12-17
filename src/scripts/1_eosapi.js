@@ -153,9 +153,20 @@ class EosApi {
         })
     }
 
+    getAccountEmail(user,handler) {
+        const options = { 'account' : user }
+        this.requestApi('get_account_email',options,(email) => {
+            handler(email)
+        })
+    }
+
 }
 
 // let api = new EosApi
+
+// api.getAccountEmail('nicolas2decr',(email) => {
+//     console.log(email)
+// })
 
 // api.checkAuthentication('francois2pum','5K3QRgW34VPgGyfw5Rv4EcPEKEAw1ndfLM19NAaRxWF6wkJkvwc',(response) => {
 //     console.log(response)
