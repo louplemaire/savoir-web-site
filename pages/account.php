@@ -1,5 +1,5 @@
 <main class="accountMain">
-    <section class="accountMain__accountLeftSection">
+    <section class="accountMain__accountLeftSection js-mouseAnimated">
         <h2 class="accountTitle">Créer un compte SAVOIR</h2>
         <div class="accountMain__accountLeftSection__container">
             <div class="accountMain__accountLeftSection__container__verticalBar">

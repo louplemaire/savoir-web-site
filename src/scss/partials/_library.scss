@@ -1,3 +1,8 @@
+// Mouse animated effect
+.js-mouseAnimated {
+    will-change: transform;
+}
+
 // Primary button
 a.primaryButton{
     display: inline-block;

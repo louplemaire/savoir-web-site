@@ -21,6 +21,7 @@
                 background-color: $background-color;
                 outline: none;
                 cursor: pointer;
+                box-sizing: border-box;
             }
             &__subResearcher{
                 position: absolute;
@@ -28,7 +29,7 @@
                 left: 0;
                 z-index: -100;
                 width: 100%;
-                height: 21px;
+                height: 57px;
                 padding: 16px;
                 border-radius: 10px;
                 color: $text-color;
@@ -43,6 +44,7 @@
                 transition-timing-function: ease-in-out;
                 transform: translate(-4px, 4px);
                 will-change: transform;
+                box-sizing: border-box;
                 &__list{
                     list-style: none;
                     &__line{
@@ -56,9 +58,6 @@
                             flex-direction: row;
                             &__name{
                                 margin-right: 8px;
-                            }
-                            &__id{
-                                opacity: 0.7;
                             }
                         }
                         &__number{
