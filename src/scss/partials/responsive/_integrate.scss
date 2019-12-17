@@ -1,5 +1,15 @@
 .integrateMain{
+    width: 100%;
+    padding: 26px;
+    &__integrateLeftSection{
+        width: 90%;
+    }
     &__integrateRightSection{
         display: none;
+    }
+    &__bottomSection{
+        img{
+            transform: scaleY(4) translateY(6vh);
+        };
     }
 }
