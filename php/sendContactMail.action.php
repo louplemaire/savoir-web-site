@@ -5,3 +5,4 @@ $content = 'De : '.$_POST['name'].' : '.$_POST['email'].'
 '.$_POST['text'];
 $header = 'Reply-To: '.$_POST['email'];
 mail('romain.penchenat@gmail.com',$title,$content,$header);
+header('Location: /integrate');
