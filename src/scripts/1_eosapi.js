@@ -109,18 +109,15 @@ class EosApi {
     }
 
     // Get sor transactions for user for specific category
-    // getSorTransactions(account,handler,pos = -1) {
-    //     this.requestApi('get_last_transactions',{},(data) => {
-    //         const transactions = data.reduce((result,data) => {
-    //             const transaction = new EosTransaction(data,account)
-    //             if (!transaction.useless) {
-    //                 result.push(transaction)
-    //             }
-    //             return result
-    //         },[])
-    //         handler(transactions)
-    //     })
-    // }
+    getTransactionsOfUserForCategory(user,category,handler) {
+        const options = {
+            'category' : category,
+            'account' : user
+        }
+        this.requestApi('get_transactions_of_user_for_category',options,(data) => {
+            handler(this.transformDataInTransactions(data))
+        })
+    }
 
     // Cet current trending topic
     getTrendingTopic() {
@@ -129,24 +126,28 @@ class EosApi {
 
 }
 
-let api = new EosApi
+// let api = new EosApi
 
-api.getUserSorBalance('hugoleroy123', (balance) => {
-    console.log(`hugoleroy123 SOR tokens : ${balance}`)
-})
-api.getSorCurrentSupply((supply) => {
-    console.log(`Total SOR tokens supplied : ${supply}`)
-})
-console.log(api.getTrendingTopic())
+// api.getUserSorBalance('hugoleroy123', (balance) => {
+//     console.log(`hugoleroy123 SOR tokens : ${balance}`)
+// })
+// api.getSorCurrentSupply((supply) => {
+//     console.log(`Total SOR tokens supplied : ${supply}`)
+// })
+// console.log(api.getTrendingTopic())
 
-api.getLastSorTransactions((transactions) => {
-    console.log(transactions)
-})
+// api.getLastSorTransactions((transactions) => {
+//     console.log(transactions)
+// })
 
-api.getSearchResults('n',(users) => {
-    console.log(users)
-})
+// api.getSearchResults('n',(users) => {
+//     console.log(users)
+// })
 
-api.getUserCategories('nicolas2decr',(categories) => {
-    console.log(categories)
-})
+// api.getUserCategories('nicolas2decr',(categories) => {
+//     console.log(categories)
+// })
+
+// api.getTransactionsOfUserForCategory('nicolas2decr','blockchain',(transactions) => {
+//     console.log(transactions)
+// })
