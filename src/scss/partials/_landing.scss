@@ -27,33 +27,18 @@
         }
     }
     &__landingFirstSection{
-        width: 100%;
         text-align: center;
-        background: url('/assets/images/backgrounds_landing/backgroundwhite.svg');
-        &__subtitle{
-            font-size: $font-size-subtitle;
-            color: $text-color;
-        }
         &__iconsList{
+            text-align: left;
             margin: 80px 0;
-            width: 100%;
             display: flex;
             justify-content: space-around;
-        }
-        &__landingWhitePanels{
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-        a{
-            margin-top: 160px;;
         }
     }
     &__landingSecondSection{
         overflow: hidden;
-        margin: 15vh 0;
-        padding: 15vh 0;
+        margin: 40px 0;
+        padding: 80px 0;
         width: 100%;
         background: url('/assets/images/backgrounds_landing/bluewavebg.svg');
         background-position: -10vw 0vw;
@@ -80,7 +65,7 @@
 
         }
         a{
-            margin-top: 40px;
+            margin-top: 16px;
         }
         
     }

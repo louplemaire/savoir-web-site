@@ -1,18 +1,17 @@
 
 .landingMain{
-    padding: 16px;
     &__landingContainer{
-        width: 50%;
-        margin: 0 auto;
+        padding: calc(5vh + 80px) 0 25vh;
+        margin-bottom: 10vh;
         &__middleContainer{
             width: 100%;
-
         }
     }
     &__landingFirstSection{
+        padding: 0 16px;
         &__iconsList{
             flex-direction: column;
-            margin: 16px 0;
+            margin: 16px 32px;
         }
     }
     &__landingSecondSection{
