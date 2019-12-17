@@ -18,9 +18,9 @@
     <div class="header__menuButton menuIcon">
         <span>Fermer</span>
     </div>
-        <h3 class="topMenu"><a href="#">Explorer</a></h3>
-        <h3><a href="#">Créer un compte</a></h3>
-        <h3><a href="#">Intégrer SAVOIR</a></h3>
-        <h3><a href="#">À propos</a></h3>
+        <h3 class="topMenu"><a class="menuSelect"href="/explorer">Explorer</a></h3>
+        <h3><a class="menuSelect" href="/account">Créer un compte</a></h3>
+        <h3><a class="menuSelect" href="/integrate">Intégrer SAVOIR</a></h3>
+        <h3><a class="menuSelect" href="/about">À propos</a></h3>
     </div>
 </header>
