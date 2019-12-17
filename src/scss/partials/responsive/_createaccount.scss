@@ -1,3 +1,40 @@
-.createaccountMain{
+.createaccountMain {
     display: flex;
+    background-image: url("/assets/images/background_createaccount.svg");
+    width: 100%;
+    height: 100vh;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    z-index: -200;
+    &__createaccountLeftSection{
+        padding: 24px;
+        &__paragraph{
+            width: 100%;
+        }
+    }
+
 }
+
+.inputcreateaccount{
+    width: 100%;
+    padding-left: 0px;
+}
+
+.createaccountMain__createaccountRightSection{
+    display: none;
+    &__img{
+        display: none;
+    }
+}
+
+.container__createaccountButton{
+    display: flex;
+    justify-content: center;
+}
+
+.createaccountbutton{
+    margin-left: 0px;
+    margin-bottom: 48px;
+}
+

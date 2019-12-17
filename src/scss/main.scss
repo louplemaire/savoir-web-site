@@ -9,6 +9,7 @@
 @import "partials/library";
 @import "partials/explorer";
 @import "partials/profil";
+@import "partials/createaccount";
 
 @media screen and (orientation:portrait){
   .js-mouseAnimated {
@@ -21,6 +22,7 @@
   @import "partials/responsive/profil";
   @import "partials/responsive/explorer";
   @import "partials/responsive/header";
+  @import "partials/responsive/createaccount";
 }
 
 body, html {
