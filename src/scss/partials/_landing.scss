@@ -1,31 +1,17 @@
-.backgroundContainer{
-    position: absolute;
-    width: calc(100% + 80px);
-    left: -40px;
-    height: 100vh;
-    background-image: url("/assets/images/backgrounds_landing/fondegrade2.png");
-    background-size: 120% 120%;
-    background-position: -2vw 0;
-    background-repeat: no-repeat;
-    z-index: -200;
-}
 .landingMain{
     display: flex;
     flex-direction: column;
     align-items: space-between;
-    
-    .landingBackgroundWave{
-        position: absolute;
-        max-width: 100%;
-        transform: scale(1.2);
-        margin-top: -20vh;
-    }
     &__landingContainer{
-        width: 100vw;
-        height: 60vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-image: url("/assets/images/backgrounds_landing/fondegrade.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        padding: calc(15vh + 80px) 0 30vh;
+        margin-bottom: 15vh;
         &__middleContainer{
             width: 20vw;
             text-align: center;
@@ -33,7 +19,7 @@
                 margin-bottom: 16px;
             }
             p{
-                margin-bottom: 80px;
+                margin-bottom: 40px;
             }
             .primaryButton{
                 display: inline-block;
@@ -41,16 +27,9 @@
         }
     }
     &__landingFirstSection{
-        margin-top: 50vh;
         width: 100%;
         text-align: center;
-        &__firstSectionWave{
-            width: 100%;
-            left: 0;
-            position: absolute;
-            top: 100vh;
-            z-index: -100;
-        }
+        background: url('/assets/images/backgrounds_landing/backgroundwhite.svg');
         &__subtitle{
             font-size: $font-size-subtitle;
             color: $text-color;
