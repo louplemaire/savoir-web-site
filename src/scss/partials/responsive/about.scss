@@ -1,0 +1,22 @@
+.aboutMain{
+    padding: 26px;
+    &__aboutFirstSection{
+        img{
+            display: none;
+        }
+        &__leftContainer{
+            width: 100%;
+        }
+    }
+    &__aboutSecondSection{
+        &__firstRow{
+            flex-direction: column;
+            &__profile{
+                margin-bottom: 16px;
+                &__text{
+                    width: auto;
+                }
+            }
+        }
+    }
+}
