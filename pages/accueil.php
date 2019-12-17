@@ -1,6 +1,6 @@
-<div class="backgroundContainer js-mouseAnimated"></div>
+<!-- <div class="backgroundContainer js-mouseAnimated"></div> -->
 <main class="landingMain">
-    <div class="landingBackgroundContainer"></div>
+    <!-- <div class="landingBackgroundContainer"></div> -->
     <div class="landingMain__landingContainer">
         <div class="landingMain__landingContainer__middleContainer">
             <h2 class="landingMain__landingContainer__middleContainer__landingTitle">
@@ -12,7 +12,6 @@
         </div>
     </div>
     <section class="landingMain__landingFirstSection">
-        <img src="assets/images/backgrounds_landing/backgroundwhite.svg" alt="background" class="landingMain__landingFirstSection__firstSectionWave">
         <h3 class="landingFirstSection__subtitle">
             SAVOIR, faire grandir l'économie de la connaissance
         </h3>

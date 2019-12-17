@@ -1,12 +1,18 @@
 // Header
 .header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 10px 80px;
+    z-index: 10000;
     &__logo{
-        width: 135px;
+        height: 60px;
     }
     &__menu{
         display: flex;
