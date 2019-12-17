@@ -1,5 +1,5 @@
 <main class="integrateMain">
-    <section class="integrateMain__integrateLeftSection">
+    <section class="integrateMain__integrateLeftSection js-mouseAnimated">
         <h2 class="integrateTitle">Intégrer SAVOIR</h2>
         <div class="integrateMain__integrateLeftSection__container">
             <div class="integrateMain__integrateLeftSection__container__verticalBar">
@@ -35,7 +35,7 @@ avec notre aide</h3>
     </section>
     <section class="integrateMain__bottomSection">
          <img src="assets/images/backgrounds_landing/bluewavebg.svg" alt="background">
-         <div class="bulletPoint"></div>
+         <div class="bulletPoint js-mouseAnimated"></div>
          <div class="integrateMain__bottomSection__formContainer">
              <h3 class="integrateMain__bottomSection__formContainer__formTitle">Parlons-en</h3>
              <form action="">
