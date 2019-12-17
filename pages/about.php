@@ -17,7 +17,7 @@ transmission de connaissances</h3>
     </h3>
     <div class="aboutMain__aboutSecondSection__firstRow">
         <div class="aboutMain__aboutSecondSection__firstRow__profile">
-            <div class="aboutMain__aboutSecondSection__firstRow__profile__image"></div>
+            <div class="aboutMain__aboutSecondSection__firstRow__profile__image hugo"></div>
             <div class="aboutMain__aboutSecondSection__firstRow__profile__text">
                 <div class="aboutMain__aboutSecondSection__firstRow__profile__text__name">
                     <h3>Hugo Leroy</h3>
@@ -30,7 +30,7 @@ transmission de connaissances</h3>
             </div>
         </div>
         <div class="aboutMain__aboutSecondSection__firstRow__profile">
-            <div class="aboutMain__aboutSecondSection__firstRow__profile__image"></div>
+            <div class="aboutMain__aboutSecondSection__firstRow__profile__image loup"></div>
             <div class="aboutMain__aboutSecondSection__firstRow__profile__text">
                 <div class="aboutMain__aboutSecondSection__firstRow__profile__text__name">
                     <h3>Loup Lemaire</h3>
@@ -45,7 +45,7 @@ transmission de connaissances</h3>
     </div>
     <div class="aboutMain__aboutSecondSection__firstRow">
         <div class="aboutMain__aboutSecondSection__firstRow__profile">
-            <div class="aboutMain__aboutSecondSection__firstRow__profile__image"></div>
+            <div class="aboutMain__aboutSecondSection__firstRow__profile__image nico"></div>
             <div class="aboutMain__aboutSecondSection__firstRow__profile__text">
                 <div class="aboutMain__aboutSecondSection__firstRow__profile__text__name">
                     <h3>Nicolas Decreton</h3>
@@ -72,7 +72,7 @@ transmission de connaissances</h3>
         </div>
     </div>
     <div class="aboutMain__aboutSecondSection__firstRow__profile lastProfile">
-            <div class="aboutMain__aboutSecondSection__firstRow__profile__image"></div>
+            <div class="aboutMain__aboutSecondSection__firstRow__profile__image romain"></div>
             <div class="aboutMain__aboutSecondSection__firstRow__profile__text">
                 <div class="aboutMain__aboutSecondSection__firstRow__profile__text__name">
                     <h3>Romain Penchenat</h3>

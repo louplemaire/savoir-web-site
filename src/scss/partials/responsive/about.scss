@@ -1,5 +1,4 @@
 .aboutMain{
-    padding: 26px;
     &__aboutFirstSection{
         img{
             display: none;
@@ -12,7 +11,7 @@
         &__firstRow{
             flex-direction: column;
             &__profile{
-                margin-bottom: 16px;
+                margin-bottom: 40px;
                 &__text{
                     width: auto;
                 }
