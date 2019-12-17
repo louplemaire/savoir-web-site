@@ -25,10 +25,15 @@ class EosApi {
             headers: new Headers({ "Content-type": "application/x-www-form-urlencoded" }),
             method: 'post',
             body: this.urlencode(options)
-        }).then(function(response) {
-            return response.json()
-        }).then(function(data) {
-            handler(data)
+        })
+        .then(response => response.text())
+        .then(text => {
+            try {
+                const data = JSON.parse(text);
+                handler(data)
+            } catch(err) {
+                handler(text)
+            }
         })
     }
 
@@ -124,15 +129,43 @@ class EosApi {
         return 'Blockchain'
     }
 
+    checkAuthentication(user,privateKey,handler) {
+        const options = {
+            'account' : user,
+            'accountPrivateKey' : privateKey
+        }
+        this.requestApi('confirm_authentication',options,(answer) => {
+            handler(answer)
+        })
+    }
+
+    getAvalaibleCategoriesForUser(user,handler) {
+        const options = { 'account' : user }
+        this.requestApi('get_avalaible_categories',options,(data) => {
+            const cleanData = data.map((d) => {
+                return d["savoirtopic"]
+            })
+            handler(cleanData)
+        })
+    }
+
 }
 
 // let api = new EosApi
+
+// api.checkAuthentication('francois2pum','5K3QRgW34VPgGyfw5Rv4EcPEKEAw1ndfLM19NAaRxWF6wkJkvwc',(response) => {
+//     console.log(response)
+// })
+
+// api.getAvalaibleCategoriesForUser('nicolas2decr',(categories) => {
+//     console.log(categories)
+// })
 
 // api.getLastSorTransactions((transactions) => {
 //     console.log(transactions)
 //     transactions.forEach(transaction => {
 //         // Créer élément html rempli
-//         getTransactionDiv(transaction)
+//         // getTransactionDiv(transaction)
 //         // Ajouter à la liste
 //     })
 // })
