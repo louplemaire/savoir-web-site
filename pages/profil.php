@@ -171,3 +171,6 @@
         </div>
     </main>
 </div>
+<script>
+    const userAccount = '<?php echo $_GET['a'] ?>'
+</script>

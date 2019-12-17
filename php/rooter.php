@@ -1,7 +1,7 @@
 <?php
-$url = (key_exists('REQUEST_URI',$_SERVER)) ? $_SERVER['REQUEST_URI'] : "";
+$url = (key_exists('PATH_INFO',$_SERVER)) ? $_SERVER['PATH_INFO'] : "";
 if ($url == "" || $url == "/") {
     include_once 'pages/accueil.php';
 } else {
-    include_once 'pages'.$_SERVER['REQUEST_URI'].'.php';
+    include_once 'pages'.$_SERVER['PATH_INFO'].'.php';
 }
