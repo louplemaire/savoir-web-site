@@ -10,11 +10,21 @@ class EosApi {
         return parseFloat(amount) * 10000
     }
 
+    urlencode(obj) {
+        let str = []
+        for (let p in obj)
+          if (obj.hasOwnProperty(p)) {
+            str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]))
+          }
+        return str.join("&")
+      }
+
     // Request our NodeJS API
     requestApi(request,options,handler) {
         fetch(`https://savoir-api.herokuapp.com/${request}`, {
+            headers: new Headers({ "Content-type": "application/x-www-form-urlencoded" }),
             method: 'post',
-            body: JSON.stringify(options)
+            body: this.urlencode(options)
         }).then(function(response) {
             return response.json()
         }).then(function(data) {
@@ -61,21 +71,35 @@ class EosApi {
         })
     }
 
-    // Return an array of the 20 last SAVOIR transactions
+    transformDataInTransactions(data) {
+        const transactions = data.reduce((result,data) => {
+            const transaction = new EosTransaction(data)
+            if (!transaction.useless) {
+                result.push(transaction)
+            }
+            return result
+        },[])
+        return transactions
+    }
+
+    // Return an array of the 10 last SAVOIR transactions
     getLastSorTransactions(handler) {
         this.requestApi('get_last_transactions',{},(data) => {
-            const transactions = data.reduce((result,data) => {
-                const transaction = new EosTransaction(data)
-                if (!transaction.useless) {
-                    result.push(transaction)
-                }
-                return result
-            },[])
-            handler(transactions)
+            handler(this.transformDataInTransactions(data))
         })
     }
 
     // Get search results
+    getSearchResults(search,handler) {
+        const options = { 'search' : search }
+        this.requestApi('get_users_for_search',options,(data) => {
+            console.log(data)
+            const users = data.map((userData) => {
+                return new User(userData)
+            })
+            handler(users)
+        })
+    }
 
     // Get user profil (token balance + category)
     getUserFullProfil() {
@@ -115,4 +139,8 @@ console.log(api.getTrendingTopic())
 
 api.getLastSorTransactions((transactions) => {
     console.log(transactions)
+})
+
+api.getSearchResults('n',(users) => {
+    console.log(users)
 })
