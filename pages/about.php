@@ -58,7 +58,7 @@ transmission de connaissances</h3>
             </div>
         </div>
         <div class="aboutMain__aboutSecondSection__firstRow__profile">
-            <div class="aboutMain__aboutSecondSection__firstRow__profile__image"></div>
+            <div class="aboutMain__aboutSecondSection__firstRow__profile__image victor"></div>
             <div class="aboutMain__aboutSecondSection__firstRow__profile__text">
                 <div class="aboutMain__aboutSecondSection__firstRow__profile__text__name">
                     <h3>Victor Buczkowski</h3>
