@@ -1,15 +1,27 @@
 .integrateMain{
-    width: 100%;
     padding: 26px;
     &__integrateLeftSection{
         width: 90%;
+        &__container{
+            &__verticalBar{
+                height: 122%;
+            }
+        }
     }
     &__integrateRightSection{
         display: none;
     }
     &__bottomSection{
         img{
-            transform: scaleY(4) translateY(6vh);
-        };
+            transform: scaleY(4) translateY(12vh);
+        }
+        &__formContainer{
+            form{
+                width: 80%;
+                a{
+                    width: auto;
+                }
+            }
+        }
     }
 }
