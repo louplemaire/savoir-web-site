@@ -132,9 +132,16 @@ class EosApi {
 //     console.log(transactions)
 //     transactions.forEach(transaction => {
 //         // Créer élément html rempli
+//         getTransactionDiv(transaction)
 //         // Ajouter à la liste
 //     })
 // })
+
+// function getTransactionDiv(transaction) {
+//     // Créer la div de transaction
+//     const div = document.createElement('div')
+//     return div
+// }
 
 // api.getUserSorBalance('hugoleroy123', (balance) => {
 //     console.log(`hugoleroy123 SOR tokens : ${balance}`)
