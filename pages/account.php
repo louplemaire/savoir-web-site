@@ -22,7 +22,7 @@
                 </div>
                 <div class="accountMain__accountLeftSection__container__rightContainer__paragraph">
                 <div class="accountMain__accountLeftSection__container__rightContainer__paragraph__bulletPoint buttonBulletPoint"></div>
-                    <a href="#" class="primaryButton">
+                    <a href="/createaccount" class="primaryButton">
                         Créer un wallet EOS
                     </a>
                 </div>
