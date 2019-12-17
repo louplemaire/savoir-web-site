@@ -1,4 +1,16 @@
 .accountMain{
+    flex-direction: column-reverse;
     padding: 26px;
     width: 100%;
+    padding-bottom: 124px;
+    &__accountLeftSection{
+        width: 90%;
+    }
+    &__accountRightSection{
+        position: absolute;
+        width: 100%;
+        height: 10vh;
+        text-align: center;
+        display: none;
+    }
 }
