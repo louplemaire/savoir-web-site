@@ -1,0 +1,44 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px 10px 0px;
+    &__logo{
+        width: 130px;
+    }
+    &__menu{
+        display: none;
+    }
+    &__menuButton{
+        display: flex;
+        flex-direction: row;
+        span{
+            margin-right: 5px;
+        }
+        &__hamburger{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &__up,&__middle,&__down{
+                position: relative;
+                width: 40px;
+                height: 3px;
+                border-radius: 1px;
+                background-color: $color-secondary;
+            }
+            &__up::after,&__middle::after,&__down::after{
+                content: " ";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 40px;
+                height: 3px;
+                border-radius: 1px;
+                background-color: $color-secondary;
+                opacity: 0.5;
+                transform: translate(-1px, 1px);
+            }
+        }
+    }
+}
