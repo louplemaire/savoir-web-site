@@ -128,6 +128,14 @@ class EosApi {
 
 // let api = new EosApi
 
+// api.getLastSorTransactions((transactions) => {
+//     console.log(transactions)
+//     transactions.forEach(transaction => {
+//         // Créer élément html rempli
+//         // Ajouter à la liste
+//     })
+// })
+
 // api.getUserSorBalance('hugoleroy123', (balance) => {
 //     console.log(`hugoleroy123 SOR tokens : ${balance}`)
 // })
@@ -135,10 +143,6 @@ class EosApi {
 //     console.log(`Total SOR tokens supplied : ${supply}`)
 // })
 // console.log(api.getTrendingTopic())
-
-// api.getLastSorTransactions((transactions) => {
-//     console.log(transactions)
-// })
 
 // api.getSearchResults('n',(users) => {
 //     console.log(users)
