@@ -10,14 +10,12 @@
                     <li class="exploreMain__exploreContainer__explorer__subResearcher__list__line">
                         <div class="exploreMain__exploreContainer__explorer__subResearcher__list__line__info">
                             <div class="exploreMain__exploreContainer__explorer__subResearcher__list__line__info__name">Nicolas Decreton</div>
-                            <div class="exploreMain__exploreContainer__explorer__subResearcher__list__line__info__id">(0SFGhgshqgdhg38368)</div>
                         </div>
                         <div class="exploreMain__exploreContainer__explorer__subResearcher__list__line__number">130SOR</div>
                     </li>
                     <li class="exploreMain__exploreContainer__explorer__subResearcher__list__line">
                         <div class="exploreMain__exploreContainer__explorer__subResearcher__list__line__info">
                             <div class="exploreMain__exploreContainer__explorer__subResearcher__list__line__info__name">Nicolas Decreton</div>
-                            <div class="exploreMain__exploreContainer__explorer__subResearcher__list__line__info__id">(0SFGhgshqgdhg38368)</div>
                         </div>
                         <div class="exploreMain__exploreContainer__explorer__subResearcher__list__line__number">130SOR</div>
                     </li>
