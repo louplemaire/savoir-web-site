@@ -1,7 +1,6 @@
 class EosApi {
 
     constructor() {
-        // this.apiUrl = 'https://eos.greymass.com'
         this.apiUrl = 'http://213.202.230.42:8888'
         this.code = 'projetsavoir'
         this.symbol = 'SOR'
@@ -9,6 +8,18 @@ class EosApi {
 
     static formatSorTokens(amount) {
         return parseFloat(amount) * 10000
+    }
+
+    // Request our NodeJS API
+    requestApi(request,options,handler) {
+        fetch(`https://savoir-api.herokuapp.com/${request}`, {
+            method: 'post',
+            body: JSON.stringify(options)
+        }).then(function(response) {
+            return response.json()
+        }).then(function(data) {
+            handler(data)
+        })
     }
 
     // Wrapper for post requests
@@ -50,14 +61,11 @@ class EosApi {
         })
     }
 
-    getSorTransactions(account,handler,pos = -1) {
-        const options = {
-            'account_name':account,
-            'pos':pos
-        }
-        this.post('history/get_actions',options,(data) => {
-            const transactions = data["actions"].reduce((result,data) => {
-                const transaction = new EosTransaction(data,account)
+    // Return an array of the 20 last SAVOIR transactions
+    getLastSorTransactions(handler) {
+        this.requestApi('get_last_transactions',{},(data) => {
+            const transactions = data.reduce((result,data) => {
+                const transaction = new EosTransaction(data)
                 if (!transaction.useless) {
                     result.push(transaction)
                 }
@@ -67,16 +75,26 @@ class EosApi {
         })
     }
 
-    // Return an array of the 20 last SAVOIR transactions
-    getLastSorTransactions(handler) {
-        this.getSorTransactions('projetsavoir',(transactions) => {
-            handler(transactions)
-        })
-    }
+    // Get search results
 
+    // Get user profil (token balance + category)
     getUserFullProfil() {
         // return a user object with each category and all transactions
     }
+
+    // Get sor transactions for user for specific category
+    // getSorTransactions(account,handler,pos = -1) {
+    //     this.requestApi('get_last_transactions',{},(data) => {
+    //         const transactions = data.reduce((result,data) => {
+    //             const transaction = new EosTransaction(data,account)
+    //             if (!transaction.useless) {
+    //                 result.push(transaction)
+    //             }
+    //             return result
+    //         },[])
+    //         handler(transactions)
+    //     })
+    // }
 
     // Cet current trending topic
     getTrendingTopic() {
@@ -95,6 +113,6 @@ api.getSorCurrentSupply((supply) => {
 })
 console.log(api.getTrendingTopic())
 
-// api.getSorTransactions('g4zdamnxhege',(transactions) => {
-//     console.log(transactions)
-// })
+api.getLastSorTransactions((transactions) => {
+    console.log(transactions)
+})
