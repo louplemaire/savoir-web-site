@@ -1,0 +1,27 @@
+.sendtokenMain__sendtokenRightSection{
+    display: none;
+}
+
+.sendtokenMain__sendtokenLeftSection{
+    width: 100%;
+}
+
+.textsendtoken{
+    color: $text-color;
+}
+
+.checksendtext{
+    color: $text-color;
+}
+
+.inputsendtoken{
+    border: solid $text-color 3px;
+    width: 100%
+}
+
+.container__sendtokenButton{
+    margin-left: 0%;
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}

@@ -17,7 +17,7 @@
             <p class="textsendtoken">Cette clé vous a été fournit lors de la <br>
                 création de votre compte !</p>
             <input type="checkbox" id="checksend" name="check">
-            <label id="checksendtext" for="check">Rester connecté la prochaine fois</label>
+            <label class="checksendtext" for="check">Rester connecté la prochaine fois</label>
         </form>
         </div>
         <div class="container__sendtokenButton">
