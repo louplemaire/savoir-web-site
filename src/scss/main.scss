@@ -10,6 +10,10 @@
 @import "partials/explorer";
 @import "partials/profil";
 
+@media screen and (orientation:portrait){
+  @import url("partials/responsive/landing");
+}
+
 body, html {
   height: 100%;
   margin: 0;

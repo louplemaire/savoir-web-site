@@ -44,7 +44,7 @@ avec notre aide</h3>
                 <label for="email" class="">Adresse mail</label>
                 <input class="input" type="email" name="email" id="email">
                 <label for="text" class="">Votre domaine d'activité</label>
-                <input class="input" type="text" name="text" id="textField">
+                <textarea class="input" type="text" name="text" id="textField"></textarea>
                 <a href="#" class="primaryButton">Envoyer</a>
              </form>
          </div>
