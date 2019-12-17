@@ -11,7 +11,7 @@
 @import "partials/profil";
 
 @media screen and (orientation:portrait){
-  @import url("partials/responsive/landing");
+  @import "partials/responsive/landing";
 }
 
 body, html {
