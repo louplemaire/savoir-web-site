@@ -2,7 +2,11 @@ const list = document.querySelector('.exploreMain__searchTraffic__traffic__list'
 
 if(list) {
     const api = new EosApi()
-    
+
+    const title = document.querySelector('.exploreMain__searchTraffic__title')
+
+    title.innerText = `Les utilisateurs ayant des connaissances en ${searchedCategory}`
+
     api.getUsersForCategory(searchedCategory,(users) => {
         console.log(users)
         users.forEach((user) => {
