@@ -28,8 +28,6 @@
         <h3 class="exploreMain__searchTraffic__title light">Les dernières transmissions de connaissances SAVOIR</h3>
         <div class="exploreMain__searchTraffic__traffic">
             <ul class="exploreMain__searchTraffic__traffic__list">
-                <li class="exploreMain__searchTraffic__traffic__list__line"><div class="exploreMain__searchTraffic__traffic__list__line__info"><div class="exploreMain__searchTraffic__traffic__list__line__info__expertise">dev server</div><div class="exploreMain__searchTraffic__traffic__list__line__info__expertise__tokenOwned">2 searchTraffic acquéris</div><div class="exploreMain__searchTraffic__traffic__list__line__info__expertise__tokenGived">0 searchTraffic transmis</div></div><div class="exploreMain__searchTraffic__traffic__list__line__number">52 SOR</div></li>
-                <li class="exploreMain__searchTraffic__traffic__list__line"><div class="exploreMain__searchTraffic__traffic__list__line__info"><div class="exploreMain__searchTraffic__traffic__list__line__info__expertise">dev server</div><div class="exploreMain__searchTraffic__traffic__list__line__info__expertise__tokenOwned">2 searchTraffic acquéris</div><div class="exploreMain__searchTraffic__traffic__list__line__info__expertise__tokenGived">0 searchTraffic transmis</div></div><div class="exploreMain__searchTraffic__traffic__list__line__number">52 SOR</div></li>
             </ul>
         </div>
     </div>
