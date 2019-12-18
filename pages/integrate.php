@@ -39,7 +39,7 @@
          </div>
          <div class="integrateMain__bottomSection__formContainer">
              <h3 class="integrateMain__bottomSection__formContainer__formTitle">Parlons-en</h3>
-             <form action="" id="contactUs">
+             <form method="post" action="/php/sendContactMail.action.php" id="contactUs">
                 <div>
                     <label for="name">Nom (personnel ou organisation)</label>
                     <input class="input" type="text" name="name" id="name">
