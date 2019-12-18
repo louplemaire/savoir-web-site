@@ -101,7 +101,7 @@ class EosApi {
     // Get search results
     getSearchResults(search,handler) {
         const options = { 'search' : search }
-        this.requestApi('get_users_for_search',options,(data) => {
+        this.requestApi('get_search_results',options,(data) => {
             const users = data.map((userData) => {
                 return new User(userData)
             })
