@@ -18,6 +18,7 @@ a.primaryButton, button.primaryButton{
     background-color: $color-secondary;
     color: $background-color;
     z-index: 1;
+    outline: none;
 }
 
 a.primaryButton::after, button.primaryButton::after{
@@ -36,6 +37,7 @@ a.primaryButton::after, button.primaryButton::after{
     transition-timing-function: ease-in-out;
     transform: translate(-4px, 4px);
     will-change: transform;
+    outline: none;
 }
 
 a.primaryButton:hover::after, button.primaryButton:hover::after {
@@ -53,6 +55,7 @@ a.secondaryButton{
     color: $color-secondary;
     z-index: 1;
     cursor: pointer;
+    outline: none;
 }
 
 a.secondaryButton::after{
@@ -71,6 +74,7 @@ a.secondaryButton::after{
     transition-timing-function: ease-in-out;
     transform: translate(-8px, 0px);
     will-change: transform;
+    outline: none;
 }
 
 a.secondaryButton:hover::after{

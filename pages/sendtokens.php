@@ -5,7 +5,7 @@
         <div class="sendtokenMain__progressBar__progression js-progression"></div>
     </div>
     <div class="sendtokenContainerSection">
-    <section class="sendtokenMain__sendtokenLeftSection">
+    <section class="sendtokenMain__sendtokenLeftSection js-mouseAnimated">
         <div class="sendtokenMain__sendtokenLeftSection__formContainer">
             <form id="authentificationForm" class="form__sendtoken" method="post" action="#">
                 <div>

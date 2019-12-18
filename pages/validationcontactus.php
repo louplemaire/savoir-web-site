@@ -1,5 +1,5 @@
 <main class="validationcontactusMain">
-    <div class="validationcontactusMain__container">
+    <div class="validationcontactusMain__container js-mouseAnimated">
         <img src="../assets/images/illustrations/validat.svg" alt="">
         <h2>Nous avons bien reçu votre message !</h2>
         <h2>A bientôt !</h2>
