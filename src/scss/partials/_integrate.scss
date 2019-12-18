@@ -75,12 +75,19 @@
                  color: $background-color;
              }
              form{
-                 width: 25vw;
+                 width: 35vw;
                  color: $background-color;
                  display: flex;
                  flex-direction: column;
+                 margin: 0 auto;
                  label{
                      margin-top: 8px;
+                 }
+                 input{
+                     width: 100%;
+                 }
+                 textarea{
+                     width: 100%;
                  }
                  a{
                     width: auto;
@@ -119,4 +126,10 @@
 #textField{
     height: 100px;
     margin-bottom: 0px;
+}
+
+.integrateButtonCont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

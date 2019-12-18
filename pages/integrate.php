@@ -55,7 +55,7 @@
                     <textarea class="input light" type="text" name="text" id="textField"></textarea>
                     <span class="errorSpan"></span>
                 </div>
-                <div>
+                <div class="integrateButtonCont">
                     <button type="submit" class="primaryButton">Envoyer</button>
                 </div>
              </form>
