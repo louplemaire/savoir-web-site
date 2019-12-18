@@ -1,8 +1,7 @@
 .sendtokenMain{
-    padding-top: 90px;
-    padding-left: 48px;
-    padding-right: 48px;
-    background-image: url("/assets/images/background_sendtoken.svg");
+    padding: 80px 40px 0;
+    box-sizing: border-box;
+    background-image: url("/assets/images/background_send_token.svg");
     width: 100%;
     height: 100vh;
     background-size: 100% auto;
@@ -10,31 +9,23 @@
     background-position: bottom;
 
     &__progressBar{
-        display: flex;
         width: 100%;
         height: 5px;
-        &__1{
-            background: #662483;
-            width: 33.3333%;
-            height: 100%;
-        }
-        &__2{
-            background: #fdfdfd;
-            width: 33.3333%;
-            height: 100%;
-        }
-        &__3{
-            background: #fdfdfd;
+        background-color: rgba(41,35,92,0.2);
+        border-radius: 2px;
+        overflow: hidden;
+        &__progression {
+            background: #672483;
             width: 33.3333%;
             height: 100%;
         }
     }
     &__sendtokenLeftSection{
-        padding-top: 98px;
+        padding-top: 80px;
         width: 50%;
     }
     &__sendtokenRightSection{
-        padding-top: 98px;
+        padding-top: 80px;
         width: 50%;
         display: flex;
         justify-content: center;
@@ -45,28 +36,32 @@
 }
 
 .inputsendtoken{
-    background: none;
-    color: $background-color;
+    box-sizing: border-box;
+    background: transparent;
+    color: $text-color;
     margin-top: 0;
-    border: solid $background-color 3px;
-    height: 40px;
-    width: 50%;
+    border: solid $text-color 3px;
+    width: 60%;
     -webkit-appearance: none;
-    align-items: center;
     outline: none;
     border-radius: 10px;
     font-size: 16px;
     font-family: $font-primary;
-    padding-left: 16px;
+    padding: 8px 16px;
     margin-bottom: 16px
 }
-
-.textsendtoken{
-    color: $background-color;
+.largeInputSendToken {
+    width: 80%;
 }
 
-.form1__sendtoken{
-    color: $background-color;
+.form__sendtoken{
+    label {
+        padding-left: 8px;
+        display: block;
+    }
+    label.inline {
+        display: inline-block;
+    }
 }
 
 #checksend{
@@ -74,11 +69,6 @@
     border-radius: 10px;
     border: solid $background-color 3px;
 }
-
-.checksendtext{
-    color: $background-color;
-}
-
 
 
 .container__sendtokenButton{

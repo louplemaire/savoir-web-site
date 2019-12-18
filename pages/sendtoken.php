@@ -1,23 +1,25 @@
 <main class="sendtokenMain">
     <h2>Envoyer des Tokens</h2>
-    <h2>Identification 1/3</h2>
+    <h3>1/3 Identification</h3>
     <div class="sendtokenMain__progressBar">
-        <div class="sendtokenMain__progressBar__1"></div>
-        <div class="sendtokenMain__progressBar__2"></div>
-        <div class="sendtokenMain__progressBar__3"></div>
+        <div class="sendtokenMain__progressBar__progression"></div>
     </div>
     <div class="sendtokenContainerSection">
     <section class="sendtokenMain__sendtokenLeftSection">
-        <div class="from1__sendtoken">
-        <form action="">
-            <label class="textsendtoken" for="name">Nom du compte</label><br>
-            <input class="inputsendtoken" type="text" name="name" id="name"><br>
-            <label class="textsendtoken" for="email" class="">Clé privée</label><br>
-            <input class="inputsendtoken" type="text" name="text" id="name"><br>
-            <p class="textsendtoken">Cette clé vous a été fournit lors de la <br>
-                création de votre compte !</p>
-            <input type="checkbox" id="checksend" name="check">
-            <label class="checksendtext" for="check">Rester connecté la prochaine fois</label>
+        <div class="form__sendtoken">
+        <form method="post" action="#">
+            <div>
+                <label for="accountName">Nom du compte</label>
+                <input class="inputsendtoken" type="text" name="accountName" id="accountName">
+            </div>
+            <div>
+                <label for="privateKey" class="">Clé privée</label>
+                <input class="inputsendtoken largeInputSendToken" type="text" name="privateKey" id="privateKey">
+            </div>
+            <div>
+                <input type="checkbox" id="stayConnected" name="stayConnected">
+                <label class="inline" for="stayConnected">Rester connecté</label>
+            </div>
         </form>
         </div>
         <div class="container__sendtokenButton">

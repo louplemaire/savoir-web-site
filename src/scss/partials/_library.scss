@@ -115,6 +115,9 @@ a.secondaryButton:hover::after{
 h1,h2,h3{
     margin: 0;
 }
+h1,h2,h3,p {
+    color: $text-color;
+}
 
 h1{
     display: none;
@@ -133,6 +136,9 @@ h3{
 p{
     font-family: $font-primary;
     font-size: $font-size-body;
+}
+p.secondary {
+    color: $text-color-secondary;
 }
 
 // Invisible
