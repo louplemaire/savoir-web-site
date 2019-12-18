@@ -31,16 +31,15 @@
                 <div class="profilMain__detail__background"></div>
                 <div class="profilMain__detail__closeButton js-close-button">Close</div>
                 <div class="profilMain__detail__info">
-                    <div>
-                        <h2>Dev Web</h2>
-                        <div>Nicolas Decreton</div>
+                    <div class="profilMain__detail__info__name">
+                        <h2 class="profilMain__detail__info__name__specName">Dev Web</h2>
+                        <div class="profilMain__detail__info__name__userName">Nicolas Decreton</div>
                     </div>
                     <div class="profilMain__detail__info__number">80 SOR</div>
                 </div>
                 <div class="profilMain__detail__token">
-                    
                     <div class="profilMain__detail__token__title">
-                        <h3>Savoirs “Dev Web”</h3>
+                        <h3 class="profilMain__detail__token__title__specName light">Savoirs “Dev Web”</h3>
                         <div class="profilMain__detail__token__title__organize">
                             <span>Organiser par</span>
                             <span class="profilMain__detail__token__title__organize__filter">Quantité</span>
