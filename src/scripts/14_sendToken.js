@@ -38,7 +38,7 @@ if(sendTokenFormContainer) {
             if (input.getAttribute('type') == "checkbox") {
                 input.classList.remove('error')
             } else {
-                input.parentElement.lastElementChild.innerHTML = ""
+                input.parentElement.lastElementChild.innerText = ""
             }
         })
     })
@@ -48,12 +48,12 @@ if(sendTokenFormContainer) {
         let state = true
         if (senderAccountInput.value.length != 12) {
             senderAccountInput.classList.add('error')
-            senderAccountInput.parentElement.lastElementChild.innerHTML = "Nom de compte incorrect"
+            senderAccountInput.parentElement.lastElementChild.innerText = "Nom de compte incorrect"
             state = false
         }
         if (senderPrivateKeyInput.value.length < 10) {
             senderPrivateKeyInput.classList.add('error')
-            senderPrivateKeyInput.parentElement.lastElementChild.innerHTML = "Clé privée incorrecte"
+            senderPrivateKeyInput.parentElement.lastElementChild.innerText = "Clé privée incorrecte"
             state = false
         }
         if (state) {
@@ -63,7 +63,7 @@ if(sendTokenFormContainer) {
                     goToSavoirForm()
                 } else {
                     senderPrivateKeyInput.classList.add('error')
-                    senderPrivateKeyInput.parentElement.lastElementChild.innerHTML = response
+                    senderPrivateKeyInput.parentElement.lastElementChild.innerText = response
                 }
             })
         }
@@ -74,17 +74,17 @@ if(sendTokenFormContainer) {
         let state = true
         if (savoirNameInput.value.length < 6) {
             savoirNameInput.classList.add('error')
-            savoirNameInput.parentElement.lastElementChild.innerHTML = "Saisissez un nom explicite pour le savoir transmis"
+            savoirNameInput.parentElement.lastElementChild.innerText = "Saisissez un nom explicite pour le savoir transmis"
             state = false
         }
         if (savoirCategoryInput.value == 'null') {
             savoirCategoryInput.classList.add('error')
-            savoirCategoryInput.parentElement.lastElementChild.innerHTML = "Choisissez une catégorie"
+            savoirCategoryInput.parentElement.lastElementChild.innerText = "Choisissez une catégorie"
             state = false
         }
         if (savoirTypeInput.value == 'null') {
             savoirTypeInput.classList.add('error')
-            savoirTypeInput.parentElement.lastElementChild.innerHTML = "Choisissez un type d'enseignement"
+            savoirTypeInput.parentElement.lastElementChild.innerText = "Choisissez un type d'enseignement"
             state = false
         }
         if (state) {
@@ -112,6 +112,25 @@ if(sendTokenFormContainer) {
     addReceiverButton.addEventListener('click',() => {
         let receivers = receiversList.children.length
         receiversList.appendChild(getReceiverInput(receivers + 1))
+    })
+
+    receiversForm.addEventListener('submit',(e) => {
+        e.preventDefault()
+        let receiverInputs = receiversList.querySelectorAll('input')
+        let inputError = false
+        receiverInputs.forEach(input => {
+            if (input.value.length == 0) {
+                if (receiversList.querySelectorAll('input').length > 1) {
+                    input.parentElement.remove()
+                }
+                inputError = true
+            } else if (input.value.length != 12) {
+                input.classList.add('error')
+                input.parentElement.lastElementChild.innerText = "Saisissez un nom de compte valide (12 caractéres)"
+            }
+        })
+        if (inputError) { return }
+
     })
 
 }

@@ -171,6 +171,7 @@ class EosApi {
 
 // let api = new EosApi
 
+// Page recherche par catégorie
 // api.getUsersForCategory('dev server',(users) => {
 //     console.log(users)
 // })
