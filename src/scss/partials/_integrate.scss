@@ -124,6 +124,11 @@
     padding-left: 16px;
 
 }
+
+.input.error{
+    border-color: red
+}
+
 ::placeholder{
     color: $background-color;
     opacity: 1;
