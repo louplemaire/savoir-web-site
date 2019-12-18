@@ -32,7 +32,7 @@ if(sendTokenFormContainer) {
         progression.classList.add('stepSavoirForm')
         stepLabel.innerText = '2/3 Informations sur le savoir transmis'
         let api = new EosApi
-        api.getAvalaibleCategoriesForUser(senderAccountInput.value,(categories) => {
+        api.getAvalaibleCategoriesForUser(accountName,(categories) => {
             categories.forEach(category => {
                 const option = document.createElement('option')
                 option.setAttribute('value',category)
@@ -150,6 +150,9 @@ if(sendTokenFormContainer) {
             if (input.value.length == 0) {
                 if (receiversList.querySelectorAll('input').length > 1) {
                     input.parentElement.remove()
+                } else {
+                    input.classList.add('error')
+                    input.parentElement.lastElementChild.innerText = "Saisissez un nom de compte valide (12 caractéres)"
                 }
                 inputError = true
             } else if (input.value.length != 12) {
@@ -158,7 +161,9 @@ if(sendTokenFormContainer) {
             }
         })
         if (inputError) { return }
-
+        console.log('send transaction')
+        let api = new EosApi
+        // api.
     })
 
 }
