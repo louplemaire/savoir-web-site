@@ -26,11 +26,11 @@
     <!-- Info -->
     <div class="exploreMain__exploreContainer__tokenTraffic tokenTraffic">
         <div class="tokenTraffic__info">
-            <div class="tokenTraffic__info__number">167 000</div>
+            <div class="tokenTraffic__info__number"></div>
             <div>tokens SAVOIR en circulation</div>
         </div>
         <div class="tokenTraffic__info">
-            <div class="tokenTraffic__info__subject">“Blockchain”</div>
+            <div class="tokenTraffic__info__subject"></div>
             <div>le sujet tendance cette semaine</div>
         </div>
     </div>
