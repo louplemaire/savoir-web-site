@@ -29,13 +29,15 @@
     }
 }
 
-.container__createaccountButton{
+.createaccountButtonCont{
     display: flex;
     justify-content: center;
+    margin-left: 0px;
 }
 
-.createaccountbutton{
-    margin-left: 0px;
-    margin-bottom: 48px;
+.inputParent{
+    input{
+        width: 100%;
+    }
 }
 
