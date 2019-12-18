@@ -12,7 +12,6 @@
 @import "partials/categories";
 @import "partials/createaccount";
 @import "partials/sendtoken";
-@import "partials/validationcontactus";
 
 @media screen and (orientation:portrait){
   .js-mouseAnimated {
@@ -27,7 +26,6 @@
   @import "partials/responsive/header";
   @import "partials/responsive/createaccount";
   @import "partials/responsive/sendtoken";
-  @import "partials/responsive/validationcontactus"
 }
 
 body, html {

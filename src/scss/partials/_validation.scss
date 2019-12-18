@@ -1,8 +1,8 @@
-.validationcontactusMain{
+.validationMain{
     box-sizing: border-box;
     background-image: url("/assets/images/background_send_token.svg");
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 80px);
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -17,4 +17,8 @@
 
 a.primaryButtonValidation{
     margin-top: 24px;
+}
+
+.imgValidat{
+    width: 50%;
 }
