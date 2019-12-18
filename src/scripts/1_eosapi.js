@@ -117,6 +117,13 @@ class EosApi {
         })
     }
 
+    getUsersForCategory(category,handler) {
+        const options = { 'category' : category }
+        this.requestApi('get_users_for_category',options,(data) => {
+            handler(data)
+        })
+    }
+
     // Get sor transactions for user for specific category
     getTransactionsOfUserForCategory(user,category,handler) {
         const options = {
@@ -163,6 +170,10 @@ class EosApi {
 }
 
 // let api = new EosApi
+
+// api.getUsersForCategory('dev server',(users) => {
+//     console.log(users)
+// })
 
 // api.getAccountEmail('nicolas2decr',(email) => {
 //     console.log(email)
