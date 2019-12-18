@@ -9,7 +9,7 @@
     background-position: bottom;
 
     .sendtokenContainerSection {
-        padding-top: 80px;
+        padding-top: 40px;
         display: flex;
     }
 
@@ -39,7 +39,7 @@
         min-height: 60vh;
         position: relative;
         width: 50%;
-        overflow: hidden;
+        overflow-x: hidden;
         &__formContainer {
             position: absolute;
             width: 300%;
@@ -52,10 +52,10 @@
             }
         }
         &__formContainer.stepSavoirForm {
-            transform: translateX(-33.33%);
+            transform: translateX(-33%);
         }
         &__formContainer.stepSavoirForm.stepReceiversForm {
-            transform: translateX(-66.66%);
+            transform: translateX(-66%);
         }
     }
     &__sendtokenRightSection{

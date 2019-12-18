@@ -58,11 +58,13 @@
             </form>
             <form id="receiversForm" class="form__sendtoken" method="post" action="#">
                 <label for="accountName">Apprenants</label>
-                <div>
-                    <input class="input" type="text" name="apprenant1" id="apprenant1" placeholder="Apprenant 1">
-                    <span class="errorSpan"></span>
+                <div id="receiversList">
+                    <div>
+                        <input class="input" type="text" name="apprenant1" id="apprenant1" placeholder="Apprenant 1">
+                        <span class="errorSpan"></span>
+                    </div>
                 </div>
-                <a class="secondaryButton">Ajouter un apprenant</a>
+                <a class="secondaryButton" id="js-addReceiver">Ajouter un apprenant</a>
                 <div class="container__sendtokenButton">
                     <button type="submit" class="primaryButton sendtokenbutton">Valider</button>
                 </div>

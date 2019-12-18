@@ -9,9 +9,12 @@ if(sendTokenFormContainer) {
           senderPrivateKeyInput = authentificationForm.querySelector('#privateKey'),
           inputs = sendTokenFormContainer.querySelectorAll('input, select'),
           savoirForm = sendTokenFormContainer.querySelector('#savoirForm'),
-          savoirNameInput = sendTokenFormContainer.querySelector('#savoirName'),
-          savoirCategoryInput = sendTokenFormContainer.querySelector('#savoirCategory'),
-          savoirTypeInput = sendTokenFormContainer.querySelector('#savoirType')
+          savoirNameInput = savoirForm.querySelector('#savoirName'),
+          savoirCategoryInput = savoirForm.querySelector('#savoirCategory'),
+          savoirTypeInput = savoirForm.querySelector('#savoirType'),
+          receiversForm = sendTokenFormContainer.querySelector('#receiversForm'),
+          receiversList = receiversForm.querySelector('#receiversList'),
+          addReceiverButton = receiversForm.querySelector('#js-addReceiver')
 
     function goToSavoirForm() {
         sendTokenFormContainer.classList.add('stepSavoirForm')
@@ -89,6 +92,26 @@ if(sendTokenFormContainer) {
             progression.classList.add('stepReceiversForm')
             stepLabel.innerText = '3/3 Selection des apprenants'
         }
+    })
+
+    function getReceiverInput(i) {
+        let div = document.createElement('div')
+        let input =  document.createElement('input')
+        input.classList.add('input')
+        input.setAttribute('type','text')
+        input.setAttribute('name',`apprenant${i}`)
+        input.setAttribute('id',`apprenant${i}`)
+        input.setAttribute('placeholder',`Apprenant ${i}`)
+        div.appendChild(input)
+        let span =  document.createElement('span')
+        span.classList.add('errorSpan')
+        div.appendChild(span)
+        return div
+    }
+
+    addReceiverButton.addEventListener('click',() => {
+        let receivers = receiversList.children.length
+        receiversList.appendChild(getReceiverInput(receivers + 1))
     })
 
 }

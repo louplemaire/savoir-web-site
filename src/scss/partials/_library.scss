@@ -183,6 +183,14 @@ form {
     font-family: $font-primary;
     padding: 8px 16px;
 }
+.input::placeholder {
+    font-size: 16px;
+    font-family: $font-primary;
+    color: $text-color-secondary;
+}
+.input.light::placeholder {
+    color: $background-color;
+}
 .input.light {
     color: $background-color;
     border: solid $background-color 3px;
