@@ -9,10 +9,9 @@
 @import "partials/library";
 @import "partials/explorer";
 @import "partials/profil";
-@import "partials/categories";
 @import "partials/createaccount";
 @import "partials/sendtoken";
-@import "partials/validationcontactus";
+@import "partials/validation";
 
 @media screen and (orientation:portrait){
   .js-mouseAnimated {
@@ -27,11 +26,10 @@
   @import "partials/responsive/header";
   @import "partials/responsive/createaccount";
   @import "partials/responsive/sendtoken";
-  @import "partials/responsive/validationcontactus"
+  @import "partials/responsive/validation";
 }
 
 body, html {
-  height: 100%;
   margin: 0;
   padding: 0;
 }
