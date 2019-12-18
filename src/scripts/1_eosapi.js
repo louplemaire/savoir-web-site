@@ -7,7 +7,7 @@ class EosApi {
     }
 
     static formatSorTokens(amount) {
-        return parseFloat(amount) * 10000
+        return Math.round(parseFloat(amount) * 10000)
     }
 
     urlencode(obj) {
@@ -165,6 +165,12 @@ class EosApi {
         const options = { 'account' : user }
         this.requestApi('get_account_email',options,(email) => {
             handler(email)
+        })
+    }
+
+    sendTransaction(options,handler) {
+        this.requestApi('send_sor',options,(response) => {
+            handler(response)
         })
     }
 

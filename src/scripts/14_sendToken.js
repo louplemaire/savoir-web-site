@@ -158,12 +158,29 @@ if(sendTokenFormContainer) {
             } else if (input.value.length != 12) {
                 input.classList.add('error')
                 input.parentElement.lastElementChild.innerText = "Saisissez un nom de compte valide (12 caractéres)"
+                inputError = true
             }
         })
         if (inputError) { return }
         console.log('send transaction')
-        let api = new EosApi
-        // api.
+        const receivers = Array.from(receiverInputs).map(input => input.value)
+        const api = new EosApi
+        const options = {
+            'fromOwnerPrivateKey' : privateKey,
+            'from' : accountName,
+            'to' : JSON.stringify(receivers),
+            'name' : savoirNameInput.value,
+            'category' : savoirCategoryInput.value,
+            'country' : 'fra',
+            'zipcode' : '94160'
+        }
+        api.sendTransaction(options,(result) => {
+            if (result == 'ok') {
+                document.location.href= `/validationsendtoken?a=${accountName}`
+            } else {
+                window.alert(`Une erreur est survenue : ${result}`)
+            }
+        })
     })
 
 }

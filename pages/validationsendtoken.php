@@ -1,7 +1,7 @@
 <main class="validationMain">
     <div class="validationMain__container js-mouseAnimated">
         <img src="../assets/images/illustrations/validat.svg" alt="">
-        <h2>Vos tokens sont bien envoyé</h2>
-        <a href="/accueil" class="primaryButton primaryButtonValidation">Revenir à l'accueil</a>
+        <h2>Votre savoir a bien été transmis !</h2>
+        <a href="/profil?a=<?php echo $_GET['a'] ?>" class="primaryButton primaryButtonValidation">Voir mon profil</a>
     </div>
 </main>
