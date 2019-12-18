@@ -7,26 +7,38 @@
     <div class="sendtokenContainerSection">
     <section class="sendtokenMain__sendtokenLeftSection js-mouseAnimated">
         <div class="sendtokenMain__sendtokenLeftSection__formContainer">
-            <form id="authentificationForm" class="form__sendtoken" method="post" action="#">
-                <div>
-                    <label for="accountName">Nom du compte</label>
-                    <input class="input" type="text" name="accountName" id="accountName">
-                    <span class="errorSpan"></span>
+            <form id="authentificationForm" method="post" action="#">
+                <div class="alreadyLogedInPart">
+                    <h3 class="alreadyLogedInPart__welcomeLabel">Bienvenue !</h3>
+                    <p>Vous êtes déja connecté</p>
+                    <div class="alreadyLogedInPart__buttonLine">
+                        <a href="#" id="continueWithLogedInAccount" class="primaryButton">Continuer</a>
+                    </div>
+                    <div class="alreadyLogedInPart__buttonLine">
+                        <a href="#" id="logout" class="secondaryButton">Se déconnecter</a>
+                    </div>
                 </div>
-                <div>
-                    <label for="privateKey" class="">Clé privée</label>
-                    <input class="input largeInput" type="text" name="privateKey" id="privateKey">
-                    <span class="errorSpan"></span>
-                </div>
-                <div>
-                    <input type="checkbox" id="stayConnected" name="stayConnected">
-                    <label class="inline" for="stayConnected">Rester connecté</label>
-                </div>
-                <div class="container__sendtokenButton">
-                    <button type="submit" class="primaryButton sendtokenbutton">Connexion</button>
+                <div class="notLogedInPart">
+                    <div>
+                        <label for="accountName">Nom du compte</label>
+                        <input class="input" type="text" name="accountName" id="accountName">
+                        <span class="errorSpan"></span>
+                    </div>
+                    <div>
+                        <label for="privateKey" class="">Clé privée</label>
+                        <input class="input largeInput" type="text" name="privateKey" id="privateKey">
+                        <span class="errorSpan"></span>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="stayConnected" name="stayConnected">
+                        <label class="inline" for="stayConnected">Rester connecté</label>
+                    </div>
+                    <div class="container__sendtokenButton">
+                        <button type="submit" class="primaryButton sendtokenbutton">Connexion</button>
+                    </div>
                 </div>
             </form>
-            <form id="savoirForm" class="form__sendtoken" method="post" action="#">
+            <form id="savoirForm" method="post" action="#">
                 <div>
                     <label for="savoirName">Nom du savoir enseigné</label>
                     <input class="input largeInput" type="text" name="savoirName" id="savoirName">
@@ -56,7 +68,7 @@
                     <button type="submit" class="primaryButton sendtokenbutton">Valider</button>
                 </div>
             </form>
-            <form id="receiversForm" class="form__sendtoken" method="post" action="#">
+            <form id="receiversForm" method="post" action="#">
                 <label for="accountName">Apprenants</label>
                 <div id="receiversList">
                     <div>

@@ -4,13 +4,13 @@
         <p class="createaccountMain__createaccountLeftSection__paragraph">Pour vous créer un compte, il vous suffit 
 simplement d’entrer votre nom et recevoir vos clés en
 respectant les conditions suivantes :</p>
-        <form id="createaccount"action="">
-            <div>
+        <form id="createaccount" action="/validationcreateaccount">
+            <div class="inputParent">
                 <label for="name">Nom (personnel ou organisation)</label>
                 <input class="input" type="text" name="name" id="name">
                 <span class="errorSpan"></span>
             </div>
-            <div>
+            <div class="inputParent">
                 <label for="email" class="">Adresse mail</label>
                 <input class="input" type="text" name="email" id="email">
                 <span class="errorSpan"></span>
