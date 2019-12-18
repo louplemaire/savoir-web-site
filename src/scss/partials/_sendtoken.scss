@@ -8,6 +8,26 @@
     background-repeat: no-repeat;
     background-position: bottom;
 
+    form.isAlreadyLogedIn {
+        .notLogedInPart {
+            display: none;
+        }
+        .alreadyLogedInPart {
+            display: block;
+        }
+    }
+
+    .alreadyLogedInPart {
+        display: none;
+        text-align: center;
+        p {
+            margin: 8px 0 60px;
+        }
+        &__buttonLine {
+            margin-top: 20px;
+        }
+    }
+
     .sendtokenContainerSection {
         padding-top: 40px;
         display: flex;
@@ -76,12 +96,4 @@
 .container__sendtokenButton{
     margin-left: 20%;
     margin-top: 24px;
-}
-
-#savoirForm {
-
-}
-
-#receiversForm {
-
 }

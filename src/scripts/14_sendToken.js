@@ -5,8 +5,12 @@ if(sendTokenFormContainer) {
     const stepLabel = document.querySelector('#stepLabel'),
           progression = document.querySelector('.js-progression')
           authentificationForm = sendTokenFormContainer.querySelector('#authentificationForm'),
+          welcomeLabel = sendTokenFormContainer.querySelector('.alreadyLogedInPart__welcomeLabel'),
+          continueWithLogedInAccountButton = sendTokenFormContainer.querySelector('#continueWithLogedInAccount'),
+          logoutButton = sendTokenFormContainer.querySelector('#logout'),
           senderAccountInput = authentificationForm.querySelector('#accountName'),
           senderPrivateKeyInput = authentificationForm.querySelector('#privateKey'),
+          stayConnectedCheckbox = authentificationForm.querySelector('#stayConnected'),
           inputs = sendTokenFormContainer.querySelectorAll('input, select'),
           savoirForm = sendTokenFormContainer.querySelector('#savoirForm'),
           savoirNameInput = savoirForm.querySelector('#savoirName'),
@@ -16,13 +20,19 @@ if(sendTokenFormContainer) {
           receiversList = receiversForm.querySelector('#receiversList'),
           addReceiverButton = receiversForm.querySelector('#js-addReceiver')
 
+    let accountName = localStorage.getItem('accountName'),
+        privateKey = localStorage.getItem('privateKey')
+    if (accountName && privateKey) {
+        authentificationForm.classList.add('isAlreadyLogedIn')
+        welcomeLabel.innerText = `Bienvenue ${accountName} !`
+    }
+
     function goToSavoirForm() {
         sendTokenFormContainer.classList.add('stepSavoirForm')
         progression.classList.add('stepSavoirForm')
         stepLabel.innerText = '2/3 Informations sur le savoir transmis'
         let api = new EosApi
         api.getAvalaibleCategoriesForUser(senderAccountInput.value,(categories) => {
-            console.log(categories)
             categories.forEach(category => {
                 const option = document.createElement('option')
                 option.setAttribute('value',category)
@@ -31,6 +41,18 @@ if(sendTokenFormContainer) {
             })
         })
     }
+
+    continueWithLogedInAccountButton.addEventListener('click',(e) => {
+        e.preventDefault()
+        goToSavoirForm()
+    })
+
+    logoutButton.addEventListener('click',(e) => {
+        e.preventDefault()
+        localStorage.removeItem('accountName')
+        localStorage.removeItem('privateKey')
+        authentificationForm.classList.remove('isAlreadyLogedIn')
+    })
 
     inputs.forEach(function (input) {
         input.addEventListener("input", function (e) {
@@ -55,6 +77,12 @@ if(sendTokenFormContainer) {
             senderPrivateKeyInput.classList.add('error')
             senderPrivateKeyInput.parentElement.lastElementChild.innerText = "Clé privée incorrecte"
             state = false
+        }
+        accountName = senderAccountInput.value
+        privateKey = senderPrivateKeyInput.value
+        if (stayConnectedCheckbox.checked) {
+            localStorage.setItem('accountName',accountName)
+            localStorage.setItem('privateKey',privateKey)
         }
         if (state) {
             let api = new EosApi
