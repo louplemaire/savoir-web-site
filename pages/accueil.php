@@ -8,11 +8,11 @@
             <p class="landingMain__landingContainer__middleContainer__landingMainText">Devenez acteur de la nouvelle économie de la connaissance</p>
             <div class="landingMain__landingContainer__middleContainer__buttonContainer">
                 <a href="/explorer" class="secondaryButton">Trouver un profil</a>
-                <a href="/#" class="primaryButton">Découvrir SAVOIR</a>
+                <a href="#anchor" class="primaryButton">Découvrir SAVOIR</a>
             </div>
         </div>
     </div>
-    <section class="landingMain__landingFirstSection">
+    <section class="landingMain__landingFirstSection" id="anchor">
         <h3 class="landingFirstSection__subtitle">
             SAVOIR, faire grandir l'économie de la connaissance
         </h3>
