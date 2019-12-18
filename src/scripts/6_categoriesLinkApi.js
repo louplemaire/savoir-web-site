@@ -8,7 +8,6 @@ if(list) {
     title.innerText = `Les utilisateurs ayant des connaissances en ${searchedCategory}`
 
     api.getUsersForCategory(searchedCategory,(users) => {
-        console.log(users)
         users.forEach((user) => {
             list.appendChild(getUsersForCategoryDiv(user))
         })

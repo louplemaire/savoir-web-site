@@ -61,7 +61,6 @@ function getCategoryDiv(category) {
 }
 
 function openDetailedCategory(category) {
-    console.log(category)
     // Remplir la catégorie
     let api = new EosApi
 
@@ -78,8 +77,6 @@ function openDetailedCategory(category) {
     list.innerHTML = ""
 
     api.getTransactionsOfUserForCategory(userAccount,category.savoirtopic,(transactions) => {
-        console.log('------')
-        console.log(transactions)
         transactions.forEach((transaction) => {
             list.appendChild(getTransactionCategoryDiv(transaction))
         })
@@ -87,7 +84,6 @@ function openDetailedCategory(category) {
 }
 
 function getTransactionCategoryDiv(transaction) {
-    console.log(transaction)
     // Créer la ligne
     const line = document.createElement('li')
     line.classList.add('profilMain__detail__token__list__line')

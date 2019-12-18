@@ -4,7 +4,6 @@ if(tokenTrafficList) {
     let api = new EosApi()
 
     api.getLastSorTransactions((transactions) => {
-        console.log(transactions)
         const list = document.querySelector('.exploreMain__exploreContainer__lastTokenTraffic__list')
         transactions.forEach(transaction => {
             list.appendChild(getTransactionDiv(transaction))
@@ -12,7 +11,6 @@ if(tokenTrafficList) {
     })
 
     function getTransactionDiv(transaction) {
-        console.log(transaction)
         // Créer la ligne de transaction
         const line = document.createElement('li')
         line.classList.add('exploreMain__exploreContainer__lastTokenTraffic__list__line')

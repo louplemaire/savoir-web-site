@@ -102,10 +102,7 @@ class EosApi {
     getSearchResults(search,handler) {
         const options = { 'search' : search }
         this.requestApi('get_search_results',options,(data) => {
-            const users = data.map((userData) => {
-                return new User(userData)
-            })
-            handler(users)
+            handler(data)
         })
     }
 
