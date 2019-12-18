@@ -1,0 +1,46 @@
+.exploreMain{
+    &__searchTraffic{
+        margin-top: 56px;
+        min-height: calc(100vh - 122px);
+        padding: 40px 80px;
+        background: no-repeat url('../../../assets/images/background-explorer.svg');
+        background-size: 100% 100%;
+        box-sizing: border-box;
+        &__title{
+            text-align: center;
+        }
+        &__traffic{
+            &__list{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                list-style: none;
+                &__line{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 45%;
+                    margin-top: 15px;
+                    padding: 16px 24px 16px 16px;
+                    border-radius: 5px;
+                    box-shadow: inset 0px 0px 10px rgba(0,0,0,.5);
+                    background-color: $background-color;
+                    cursor: pointer;
+                    &__info{
+                        &__expertise{
+                            text-transform: capitalize;
+                            font-family: $font-subtitle;
+                        }
+                    }
+                    &__number{
+                        font-family: $font-subtitle;
+                        font-size: $font-size-subtitle;
+                    }
+                }
+            }
+        }
+    }
+}
