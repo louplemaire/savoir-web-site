@@ -23,11 +23,35 @@ if(profilInfo) {
             list.appendChild(getCategoryDiv(category))
         })
 
+        
+
         function getCategoryDiv(category) {
             // Créer la ligne
             const line = document.createElement('li')
             line.classList.add('profilMain__savoirs__specificity__list__line')
             list.appendChild(line)
+
+            // Ouvrir la catégorie
+            const closeProfilWindowButton = document.querySelector('.js-close-button')
+            const detailWindowGreyFilter = document.querySelector('.js-grey-filter')
+            const detailWindow = document.querySelector('.js-detail-window')
+            const overflowProfil = document.querySelector('.js-overflowProfil')
+
+            line.addEventListener('click', () => {
+                detailWindow.classList.remove('invisible')
+                detailWindowGreyFilter.classList.remove('invisible')
+                overflowProfil.classList.add('overflowHidden')
+                console.log('ouvert');
+            })
+
+            // Fermer la catégorie
+            if(closeProfilWindowButton){
+                closeProfilWindowButton.addEventListener('click', () => {
+                    detailWindow.classList.add('invisible')
+                    detailWindowGreyFilter.classList.add('invisible')
+                    overflowProfil.classList.remove('overflowHidden')
+                })
+            }
 
             // Remplir la ligne
             // Info
