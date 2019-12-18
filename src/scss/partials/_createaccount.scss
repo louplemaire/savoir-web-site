@@ -23,22 +23,7 @@
     }
 }
 
-.inputcreateaccount{
-    background: $background-color;
-    color: $background-color;
-    margin-top: 0;
-    border: solid $text-color 3px;
-    height: 40px;
-    width: 50%;
-    -webkit-appearance: none;
-    align-items: center;
-    outline: none;
-    border-radius: 10px;
-    font-size: 16px;
-    font-family: $font-primary;
-    padding-left: 16px;
-}
 
-.createaccountbutton{
-    margin-left: 160px;
+.createaccountButtonCont{
+margin-left: 160px;
 }
