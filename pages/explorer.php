@@ -4,7 +4,7 @@
     <!-- Explorer -->
     <div class="exploreMain__exploreContainer">
         <div class="exploreMain__exploreContainer__explorer">
-            <input class="exploreMain__exploreContainer__explorer__researcher js-researcher" type="text" placeholder="Recherchez un utilisateur…">
+            <input class="exploreMain__exploreContainer__explorer__researcher js-researcher" type="text" placeholder="Recherchez un utilisateur ou une catégorie de savoir…">
             <div class="exploreMain__exploreContainer__explorer__subResearcher js-subResearcher">
                 <ul class="exploreMain__exploreContainer__explorer__subResearcher__list js-subResearcher-list invisible">
                     <li class="exploreMain__exploreContainer__explorer__subResearcher__list__line">
