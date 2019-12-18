@@ -59,9 +59,10 @@
             <form id="receiversForm" class="form__sendtoken" method="post" action="#">
                 <label for="accountName">Apprenants</label>
                 <div>
-                    <input class="input" type="text" name="apprenant1" id="apprenant1" placeholder="Nom compte apprenant">
+                    <input class="input" type="text" name="apprenant1" id="apprenant1" placeholder="Apprenant 1">
                     <span class="errorSpan"></span>
                 </div>
+                <a class="secondaryButton">Ajouter un apprenant</a>
                 <div class="container__sendtokenButton">
                     <button type="submit" class="primaryButton sendtokenbutton">Valider</button>
                 </div>
