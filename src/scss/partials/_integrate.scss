@@ -115,6 +115,7 @@
     margin-top: 0;
     border: solid $background-color 3px;
     height: 40px;
+    width: 100%;
     -webkit-appearance: none;
     align-items: center;
     outline: none;
@@ -122,11 +123,18 @@
     font-size: 16px;
     font-family: $font-primary;
     padding-left: 16px;
-
 }
 
 .input.error{
     border-color: red
+}
+
+.errorSpan {
+    display: block;
+    color: red;
+    margin-top: 15px;
+    margin-left: 10px;
+    transform: translateY(-16px);
 }
 
 ::placeholder{
@@ -137,5 +145,5 @@
 
 #textField{
     height: 100px;
-    margin-bottom: 80px;
+    margin-bottom: 0px;
 }

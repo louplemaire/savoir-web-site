@@ -39,14 +39,25 @@
          </div>
          <div class="integrateMain__bottomSection__formContainer">
              <h3 class="integrateMain__bottomSection__formContainer__formTitle">Parlons-en</h3>
-             <form action="">
-                <label for="name">Nom (personnel ou organisation)</label>
-                <input class="input" type="text" name="name" id="name">
-                <label for="email" class="">Adresse mail</label>
-                <input class="input" type="email" name="email" id="email">
-                <label for="text" class="">Votre domaine d'activité</label>
-                <textarea class="input" type="text" name="text" id="textField"></textarea>
-                <a href="#" class="primaryButton submit">Envoyer</a>
+             <form action="" id="contactUs">
+                <div>
+                    <label for="name">Nom (personnel ou organisation)</label>
+                    <input class="input" type="text" name="name" id="name">
+                    <span class="errorSpan"></span>
+                </div>
+                <div>
+                    <label for="email" class="">Adresse mail</label>
+                    <input class="input" type="email" name="email" id="email">
+                    <span class="errorSpan"></span>
+                </div>
+                <div>
+                    <label for="text" class="">Votre domaine d'activité</label>
+                    <textarea class="input" type="text" name="text" id="textField"></textarea>
+                    <span class="errorSpan"></span>
+                </div>
+                <div>
+                    <button type="submit" class="primaryButton">Envoyer</button>
+                </div>
              </form>
          </div>
     </section>

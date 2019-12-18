@@ -1,4 +1,4 @@
-let form = document.querySelector('form')
+let form = document.querySelector('#contactUs')
 
 if (form != null) {
 
@@ -29,7 +29,7 @@ if (form != null) {
             inputs[0].parentElement.lastElementChild.innerHTML = "Champ obligatoire"
             e.preventDefault()
         }
-        if ((inputs[1].value.length <= 0) || verifMail(inputs[2].value)) { // Vérifier que c'est un email
+        if ((inputs[1].value.length <= 0) || verifMail(inputs[1].value)) { // Vérifier que c'est un email
             inputs[1].classList.add('error')
             inputs[1].parentElement.lastElementChild.innerHTML = "Entrez une adresse mail valide"
             e.preventDefault()
