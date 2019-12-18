@@ -163,9 +163,9 @@ form {
 .input{
     box-sizing: border-box;
     background: transparent;
-    color: $color-primary;
+    color: $text-color;
     margin-top: 0;
-    border: solid $text-color 3px;
+    border: solid $color-primary 3px;
     width: 60%;
     -webkit-appearance: none;
     outline: none;
