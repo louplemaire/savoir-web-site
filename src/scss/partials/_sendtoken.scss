@@ -8,6 +8,11 @@
     background-repeat: no-repeat;
     background-position: bottom;
 
+    .sendtokenContainerSection {
+        padding-top: 80px;
+        display: flex;
+    }
+
     &__progressBar{
         width: 100%;
         height: 5px;
@@ -21,37 +26,24 @@
         }
     }
     &__sendtokenLeftSection{
-        padding-top: 80px;
+        position: relative;
         width: 50%;
+        overflow: hidden;
+        &__formContainer {
+            position: absolute;
+            width: 300%;
+            display: flex;
+            form {
+                width: 33.33%;
+            }
+        }
     }
     &__sendtokenRightSection{
-        padding-top: 80px;
+        padding-bottom: 120px;
         width: 50%;
         display: flex;
         justify-content: center;
     }
-}
-.sendtokenContainerSection{
-    display: flex;
-}
-
-.inputsendtoken{
-    box-sizing: border-box;
-    background: transparent;
-    color: $text-color;
-    margin-top: 0;
-    border: solid $text-color 3px;
-    width: 60%;
-    -webkit-appearance: none;
-    outline: none;
-    border-radius: 10px;
-    font-size: 16px;
-    font-family: $font-primary;
-    padding: 8px 16px;
-    margin-bottom: 16px
-}
-.largeInputSendToken {
-    width: 80%;
 }
 
 .form__sendtoken{
@@ -74,4 +66,12 @@
 .container__sendtokenButton{
     margin-left: 20%;
     margin-top: 24px;
+}
+
+#savoirForm {
+
+}
+
+#receiversForm {
+
 }
