@@ -4,7 +4,9 @@
 }
 
 // Primary button
-a.primaryButton{
+a.primaryButton, button.primaryButton{
+    -webkit-appearance: none;
+    border: none;
     display: inline-block;
     position: relative;
     padding: 16px 32px;
@@ -15,7 +17,7 @@ a.primaryButton{
     z-index: 1;
 }
 
-a.primaryButton::after{
+a.primaryButton::after, button.primaryButton::after{
     content: " ";
     position: absolute;
     z-index: -1;
@@ -33,7 +35,7 @@ a.primaryButton::after{
     will-change: transform;
 }
 
-a.primaryButton:hover::after{
+a.primaryButton:hover::after, button.primaryButton:hover::after {
     transform: translate(-6px, 6px);
 }
 
@@ -143,4 +145,18 @@ p.secondary {
 // Invisible
 .invisible{
     display: none;
+}
+
+// error
+
+.input.error{
+    border-color: rgb(204, 37, 37);
+}
+
+.errorSpan {
+    display: block;
+    color: rgb(204, 37, 37);
+    margin-top: 15px;
+    margin-left: 10px;
+    transform: translateY(-16px);
 }
