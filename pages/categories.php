@@ -25,7 +25,7 @@
     </div>
     <!-- Traffic-->
     <div class="exploreMain__searchTraffic">
-        <h3 class="exploreMain__searchTraffic__title light">Les dernières transmissions de connaissances SAVOIR</h3>
+        <h3 class="exploreMain__searchTraffic__title light"></h3>
         <div class="exploreMain__searchTraffic__traffic">
             <ul class="exploreMain__searchTraffic__traffic__list">
             </ul>
