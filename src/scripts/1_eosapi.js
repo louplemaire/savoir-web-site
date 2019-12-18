@@ -153,6 +153,7 @@ class EosApi {
     getAvalaibleCategoriesForUser(user,handler) {
         const options = { 'account' : user }
         this.requestApi('get_avalaible_categories',options,(data) => {
+            console.log(data)
             const cleanData = data.map((d) => {
                 return d["savoirtopic"]
             })
