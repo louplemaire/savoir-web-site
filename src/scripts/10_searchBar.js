@@ -3,7 +3,7 @@
 // Open subresearcher
 const researcher = document.querySelector('.js-researcher')
 
-if (researcher) {
+if(researcher) {
 
     const subResearcher = document.querySelector('.js-subResearcher'),
           researcherList = researcher.querySelector('.js-subResearcher-list')
@@ -15,4 +15,9 @@ if (researcher) {
 
     researcher.addEventListener('click', () => { toggleSearchBar() })
     researcher.addEventListener('focusout', () => { toggleSearchBar() })
+
+    // api.getSearchResults('n',(data) => {
+    //     console.log(data)
+    // })
+
 }
