@@ -17,10 +17,13 @@ if(profilInfo) {
 
     api.getUserCategories(userAccount,(categories) => {
         console.log(categories)
+        const list = document.querySelector('.profilMain__savoirs__specificity__list')
         categories.forEach(category => {
             // Récupérer la liste
-            const list = document.querySelector('.profilMain__savoirs__specificity__list')
+            list.appendChild(getCategoryDiv(category))
+        })
 
+        function getCategoryDiv(category) {
             // Créer la ligne
             const line = document.createElement('li')
             line.classList.add('profilMain__savoirs__specificity__list__line')
@@ -55,6 +58,8 @@ if(profilInfo) {
             value.classList.add('profilMain__savoirs__specificity__list__line__number')
             value.innerText = `${category.tokensamount} SOR`
             line.appendChild(value)
-        });
+
+            return line
+        }
     })
 }
