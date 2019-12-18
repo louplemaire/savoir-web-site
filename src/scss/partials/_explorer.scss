@@ -25,6 +25,11 @@
                 cursor: pointer;
                 box-sizing: border-box;
             }
+            &__researcher::placeholder {
+                color: $text-color-secondary;
+                font-family: $font-primary;
+                font-size: $font-size-body;
+            }
             &__subResearcher{
                 position: absolute;
                 top: 0;
