@@ -60,6 +60,7 @@
                     cursor: pointer;
                     &__info{
                         &__expertise{
+                            text-transform: capitalize;
                             font-family: $font-subtitle;
                         }
                     }

@@ -2,17 +2,19 @@
     <div class="landingMain__landingContainer">
         <div class="landingMain__landingContainer__middleContainer js-mouseAnimated">
             <h2 class="landingMain__landingContainer__middleContainer__landingTitle">
-            Apprenez,<br>
-            Partagez.
+            Valorisez vos savoirs,<br>
+            Partagez vos connaissances.
             </h2>
-            <p class="landingMain__landingContainer__middleContainer__landingMainText">Devenez acteur de la nouvelle économie de la connaissance</p>
+            <p class="landingMain__landingContainer__middleContainer__landingMainText">
+                SAVOIR vous accompagne dans la transition vers la nouvelle économie du savoir en vous permettant de garder un historique de vos acquis tout en mettant en avant le partage de ceux-ci.
+            </p>
             <div class="landingMain__landingContainer__middleContainer__buttonContainer">
                 <a href="/explorer" class="secondaryButton">Trouver un profil</a>
-                <a href="/#" class="primaryButton">Découvrir SAVOIR</a>
+                <a href="#anchor" class="primaryButton">Découvrir SAVOIR</a>
             </div>
         </div>
     </div>
-    <section class="landingMain__landingFirstSection">
+    <section class="landingMain__landingFirstSection" id="anchor">
         <h3 class="landingFirstSection__subtitle">
             SAVOIR, faire grandir l'économie de la connaissance
         </h3>

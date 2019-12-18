@@ -22,59 +22,6 @@
             <!-- Specificity -->
             <div class="profilMain__savoirs__specificity">
                 <ul class="profilMain__savoirs__specificity__list">
-                    <li class="profilMain__savoirs__specificity__list__line">
-                        <div class="profilMain__savoirs__specificity__list__line__info">
-                            <div class="profilMain__savoirs__specificity__list__line__info__expertise">Dev web</div>
-                            <div>21 savoirs appris</div>
-                            <div>2 savoirs transmis</div>
-                        </div>
-                        <div class="profilMain__savoirs__specificity__list__line__number">80 S0R</div>
-                    </li>
-
-                    <li class="profilMain__savoirs__specificity__list__line">
-                        <div class="profilMain__savoirs__specificity__list__line__info">
-                            <div class="profilMain__savoirs__specificity__list__line__info__expertise">Dev web</div>
-                            <div>21 savoirs appris</div>
-                            <div>2 savoirs transmis</div>
-                        </div>
-                        <div class="profilMain__savoirs__specificity__list__line__number">80 S0R</div>
-                    </li>
-
-                    <li class="profilMain__savoirs__specificity__list__line">
-                        <div class="profilMain__savoirs__specificity__list__line__info">
-                            <div class="profilMain__savoirs__specificity__list__line__info__expertise">Dev web</div>
-                            <div>21 savoirs appris</div>
-                            <div>2 savoirs transmis</div>
-                        </div>
-                        <div class="profilMain__savoirs__specificity__list__line__number">80 S0R</div>
-                    </li>
-
-                    <li class="profilMain__savoirs__specificity__list__line">
-                        <div class="profilMain__savoirs__specificity__list__line__info">
-                            <div class="profilMain__savoirs__specificity__list__line__info__expertise">Dev web</div>
-                            <div>21 savoirs appris</div>
-                            <div>2 savoirs transmis</div>
-                        </div>
-                        <div class="profilMain__savoirs__specificity__list__line__number">80 S0R</div>
-                    </li>
-
-                    <li class="profilMain__savoirs__specificity__list__line">
-                        <div class="profilMain__savoirs__specificity__list__line__info">
-                            <div class="profilMain__savoirs__specificity__list__line__info__expertise">Dev web</div>
-                            <div>21 savoirs appris</div>
-                            <div>2 savoirs transmis</div>
-                        </div>
-                        <div class="profilMain__savoirs__specificity__list__line__number">80 S0R</div>
-                    </li>
-
-                    <li class="profilMain__savoirs__specificity__list__line">
-                        <div class="profilMain__savoirs__specificity__list__line__info">
-                            <div class="profilMain__savoirs__specificity__list__line__info__expertise">Dev web</div>
-                            <div>21 savoirs appris</div>
-                            <div>2 savoirs transmis</div>
-                        </div>
-                        <div class="profilMain__savoirs__specificity__list__line__number">80 S0R</div>
-                    </li>
                 </ul>
             </div>
         </div>
