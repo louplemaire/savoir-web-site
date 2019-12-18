@@ -151,7 +151,15 @@ p.secondary {
 }
 
 // error
-
+form {
+    label {
+        padding-left: 8px;
+        display: block;
+    }
+    label.inline {
+        display: inline-block;
+    }
+}
 .input{
     box-sizing: border-box;
     background: transparent;
@@ -166,7 +174,10 @@ p.secondary {
     font-family: $font-primary;
     padding: 8px 16px;
 }
-
+.input.light {
+    color: $background-color;
+    border: solid $background-color 3px;
+}
 .input.largeInput {
     width: 80%;
 }

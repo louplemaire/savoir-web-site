@@ -42,17 +42,17 @@
              <form method="post" action="/php/sendContactMail.action.php" id="contactUs">
                 <div>
                     <label for="name">Nom (personnel ou organisation)</label>
-                    <input class="input" type="text" name="name" id="name">
+                    <input class="input light" type="text" name="name" id="name">
                     <span class="errorSpan"></span>
                 </div>
                 <div>
                     <label for="email" class="">Adresse mail</label>
-                    <input class="input" type="email" name="email" id="email">
+                    <input class="input light" type="email" name="email" id="email">
                     <span class="errorSpan"></span>
                 </div>
                 <div>
                     <label for="text" class="">Votre domaine d'activité</label>
-                    <textarea class="input" type="text" name="text" id="textField"></textarea>
+                    <textarea class="input light" type="text" name="text" id="textField"></textarea>
                     <span class="errorSpan"></span>
                 </div>
                 <div>
