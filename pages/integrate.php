@@ -34,7 +34,9 @@
     </section>
     <section class="integrateMain__bottomSection">
          <img src="assets/images/backgrounds_landing/bluewavebg.svg" alt="background">
-         <div class="bulletPoint js-mouseAnimated"></div>
+         <div class="bulletPoint js-mouseAnimated">
+             <div class="reverseBar"></div>
+         </div>
          <div class="integrateMain__bottomSection__formContainer">
              <h3 class="integrateMain__bottomSection__formContainer__formTitle">Parlons-en</h3>
              <form action="">

@@ -58,6 +58,8 @@
 
 .buttonBulletPoint{
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }
 // .accountMainBackground{
 //     position: absolute;
@@ -65,3 +67,11 @@
 //     left: 0;
 //     bottom: 0;
 // }
+
+.reverseBar{
+    position: absolute;
+    background-color: $color-secondary;
+    width: 4px;
+    height: 10vh;
+    transform: translateY(-10vh);
+}
