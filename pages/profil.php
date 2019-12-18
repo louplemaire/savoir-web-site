@@ -40,7 +40,7 @@
                 <div class="profilMain__detail__token">
                     
                     <div class="profilMain__detail__token__title">
-                        <h3>Savoirs “Dev Web”</h3>
+                        <h3 class="light">Savoirs “Dev Web”</h3>
                         <div class="profilMain__detail__token__title__organize">
                             <span>Organiser par</span>
                             <span class="profilMain__detail__token__title__organize__filter">Quantité</span>
