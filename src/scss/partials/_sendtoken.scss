@@ -33,9 +33,17 @@
             position: absolute;
             width: 300%;
             display: flex;
+            transition: transform .3s;
+            will-change: transform;
             form {
                 width: 33.33%;
             }
+        }
+        &__formContainer.stepSavoirForm {
+            transform: translateX(-33.33%);
+        }
+        &__formContainer.stepSavoirForm.stepReceiversForm {
+            transform: translateX(-66.66%);
         }
     }
     &__sendtokenRightSection{
@@ -43,16 +51,6 @@
         width: 50%;
         display: flex;
         justify-content: center;
-    }
-}
-
-.form__sendtoken{
-    label {
-        padding-left: 8px;
-        display: block;
-    }
-    label.inline {
-        display: inline-block;
     }
 }
 
