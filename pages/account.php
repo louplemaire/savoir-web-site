@@ -18,10 +18,11 @@
                 <div class="accountMain__accountLeftSection__container__rightContainer__paragraph">
                 <div class="accountMain__accountLeftSection__container__rightContainer__paragraph__bulletPoint"></div>
                 <h3>Le cout d’un wallet EOS</h3>
-                <p>Le wallet EOS est un outil unique et nominatif. Son utilisation requiert de payer une seule et unique fois lors de la création de votre compte  afin de réserver le nom de celui-ci dans les données de la blockchain EOS</p>
+                <p>Le wallet EOS est un outil unique et nominatif. Son utilisation ainsi que la création du compte SAVOIR sont gratuites</p>
                 </div>
                 <div class="accountMain__accountLeftSection__container__rightContainer__paragraph">
-                <div class="accountMain__accountLeftSection__container__rightContainer__paragraph__bulletPoint buttonBulletPoint"></div>
+                <div class="accountMain__accountLeftSection__container__rightContainer__paragraph__bulletPoint buttonBulletPoint"> <div class="reverseBar"></div>
+                </div>
                     <a href="/createaccount" class="primaryButton">
                         Créer un wallet EOS
                     </a>
