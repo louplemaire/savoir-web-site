@@ -123,6 +123,10 @@ h1,h2,h3,p {
     color: $text-color;
 }
 
+h2.light, h3.light,p.light {
+    color: $background-color;
+}
+
 h1{
     display: none;
 }
