@@ -211,8 +211,8 @@ class EosApi {
 // })
 // console.log(api.getTrendingTopic())
 
-// api.getSearchResults('n',(users) => {
-//     console.log(users)
+// api.getSearchResults('n',(data) => {
+//     console.log(data)
 // })
 
 // api.getUserCategories('nicolas2decr',(categories) => {
