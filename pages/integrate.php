@@ -44,7 +44,7 @@
                 <input class="input" type="email" name="email" id="email">
                 <label for="text" class="">Votre domaine d'activité</label>
                 <textarea class="input" type="text" name="text" id="textField"></textarea>
-                <a href="#" class="primaryButton">Envoyer</a>
+                <a href="#" class="primaryButton submit">Envoyer</a>
              </form>
          </div>
     </section>
