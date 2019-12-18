@@ -52,6 +52,7 @@ a.secondaryButton{
     border: solid 4px $color-secondary;
     color: $color-secondary;
     z-index: 1;
+    cursor: pointer;
 }
 
 a.secondaryButton::after{
