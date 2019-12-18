@@ -29,8 +29,8 @@
                         <input class="input largeInput" type="text" name="privateKey" id="privateKey">
                         <span class="errorSpan"></span>
                     </div>
-                    <div>
-                        <input type="checkbox" id="stayConnected" name="stayConnected">
+                    <div class="checkboxDiv">
+                        <input class="checkbox" type="checkbox" id="stayConnected" name="stayConnected">
                         <label class="inline" for="stayConnected">Rester connecté</label>
                     </div>
                     <div class="container__sendtokenButton">

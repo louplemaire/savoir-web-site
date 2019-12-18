@@ -1,4 +1,4 @@
-// Mouse animated effect
+q// Mouse animated effect
 .js-mouseAnimated {
     will-change: transform;
 }
@@ -209,4 +209,25 @@ form {
     margin-top: 4px;
     margin-left: 8px;
     margin-bottom: 16px;
+}
+
+.checkbox {
+    border: solid $color-primary 3px;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: $font-primary;
+    padding: 8px 8px;
+}
+
+.checkbox:checked {
+    background: $color-secondary;
+    border: solid $color-primary 3px;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: $font-primary;
+    padding: 8px 8px;
 }
