@@ -101,6 +101,7 @@
                         background: $background-color;
                         &__mention{
                             &__spec{
+                                text-transform: capitalize;
                                 font-family: $font-size-subtitle;
                                 font-weight: bold;
                                 font-size: $font-size-body;
