@@ -11,4 +11,8 @@ if (researcher) {
         subResearcher.classList.toggle('subResearcherOpen')
         researcherList.classList.toggle('invisible')
     })
+    researcher.addEventListener('focusout',() => {
+        subResearcher.classList.toggle('subResearcherOpen')
+        researcherList.classList.toggle('invisible')
+    })
 }
