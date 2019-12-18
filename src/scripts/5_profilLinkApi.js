@@ -69,17 +69,18 @@ function openDetailedCategory(category) {
     const userName = document.querySelector('.profilMain__detail__info__name__userName')
     const specNumber = document.querySelector('.profilMain__detail__info__number')
     const savoirName = document.querySelector('.profilMain__detail__token__title__specName')
+    const list = document.querySelector('.profilMain__detail__token__list')
 
     specName.innerText = category.savoirtopic
     userName.innerText = userAccount
     specNumber.innerText = `${category.tokensamount} SOR`
     savoirName.innerText = `Savoirs "${category.savoirtopic}"`
+    list.innerHTML = ""
 
     api.getTransactionsOfUserForCategory(userAccount,category.savoirtopic,(transactions) => {
+        console.log('------')
         console.log(transactions)
-        const list = document.querySelector('.profilMain__detail__token__list')
         transactions.forEach((transaction) => {
-            list.innerHTML = ""
             list.appendChild(getTransactionCategoryDiv(transaction))
         })
     })
@@ -123,7 +124,7 @@ function getTransactionCategoryDiv(transaction) {
     // Value
     const value = document.createElement('div')
     value.classList.add('profilMain__detail__token__list__line__deal__value')
-    value.innerText = transaction.amount
+    value.innerText = `${transaction.amount} SOR`
     deal.appendChild(value)
 
     return line
