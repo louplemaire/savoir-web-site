@@ -1,6 +1,6 @@
 <main class="aboutMain">
     <section class="aboutMain__aboutFirstSection">
-        <div class="aboutMain__aboutFirstSection__leftContainer">
+        <div class="aboutMain__aboutFirstSection__leftContainer js-mouseAnimated">
             <h2>
                 Démocratisons l'économmie de la connaissance
             </h2>
