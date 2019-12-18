@@ -40,7 +40,7 @@
                 <div class="profilMain__detail__token">
                     
                     <div class="profilMain__detail__token__title">
-                        <h3>Savoirs “Dev Web”</h3>
+                        <h3 class="light">Savoirs “Dev Web”</h3>
                         <div class="profilMain__detail__token__title__organize">
                             <span>Organiser par</span>
                             <span class="profilMain__detail__token__title__organize__filter">Quantité</span>
@@ -48,70 +48,6 @@
                         </div>
                     </div>
                     <ul class="profilMain__detail__token__list">
-                        <li class="profilMain__detail__token__list__line">
-                            <div class="profilMain__detail__token__list__line__date">
-                                11/12/2019 à 10h26
-                            </div>
-                            <div class="profilMain__detail__token__list__line__deal">
-                                <div class="profilMain__detail__token__list__line__deal__mention">
-                                    <div class="profilMain__detail__token__list__line__deal__mention__spec">“Conférence Histoire du numérique”</div>
-                                    <div class="profilMain__detail__token__list__line__deal__mention__destination">Jack Jobs -> Téa Gates</div>
-                                </div>
-                                <div class="profilMain__detail__token__list__line__deal__value">2 SOR</div>
-                            </div>
-                        </li>
-
-                        <li class="profilMain__detail__token__list__line">
-                            <div class="profilMain__detail__token__list__line__date">
-                                11/12/2019 à 10h26
-                            </div>
-                            <div class="profilMain__detail__token__list__line__deal">
-                                <div class="profilMain__detail__token__list__line__deal__mention">
-                                    <div class="profilMain__detail__token__list__line__deal__mention__spec">“Conférence Histoire du numérique”</div>
-                                    <div class="profilMain__detail__token__list__line__deal__mention__destination">Jack Jobs -> Téa Gates</div>
-                                </div>
-                                <div class="profilMain__detail__token__list__line__deal__value">2 SOR</div>
-                            </div>
-                        </li>
-
-                        <li class="profilMain__detail__token__list__line">
-                            <div class="profilMain__detail__token__list__line__date">
-                                11/12/2019 à 10h26
-                            </div>
-                            <div class="profilMain__detail__token__list__line__deal">
-                                <div class="profilMain__detail__token__list__line__deal__mention">
-                                    <div class="profilMain__detail__token__list__line__deal__mention__spec">“Conférence Histoire du numérique”</div>
-                                    <div class="profilMain__detail__token__list__line__deal__mention__destination">Jack Jobs -> Téa Gates</div>
-                                </div>
-                                <div class="profilMain__detail__token__list__line__deal__value">2 SOR</div>
-                            </div>
-                        </li>
-
-                        <li class="profilMain__detail__token__list__line">
-                            <div class="profilMain__detail__token__list__line__date">
-                                11/12/2019 à 10h26
-                            </div>
-                            <div class="profilMain__detail__token__list__line__deal">
-                                <div class="profilMain__detail__token__list__line__deal__mention">
-                                    <div class="profilMain__detail__token__list__line__deal__mention__spec">“Conférence Histoire du numérique”</div>
-                                    <div class="profilMain__detail__token__list__line__deal__mention__destination">Jack Jobs -> Téa Gates</div>
-                                </div>
-                                <div class="profilMain__detail__token__list__line__deal__value">2 SOR</div>
-                            </div>
-                        </li>
-
-                        <li class="profilMain__detail__token__list__line">
-                            <div class="profilMain__detail__token__list__line__date">
-                                11/12/2019 à 10h26
-                            </div>
-                            <div class="profilMain__detail__token__list__line__deal">
-                                <div class="profilMain__detail__token__list__line__deal__mention">
-                                    <div class="profilMain__detail__token__list__line__deal__mention__spec">“Conférence Histoire du numérique”</div>
-                                    <div class="profilMain__detail__token__list__line__deal__mention__destination">Jack Jobs -> Téa Gates</div>
-                                </div>
-                                <div class="profilMain__detail__token__list__line__deal__value">2 SOR</div>
-                            </div>
-                        </li>
                     </ul>
                 </div>
             </div>

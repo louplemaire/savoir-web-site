@@ -52,6 +52,7 @@ a.secondaryButton{
     border: solid 4px $color-secondary;
     color: $color-secondary;
     z-index: 1;
+    cursor: pointer;
 }
 
 a.secondaryButton::after{
@@ -123,6 +124,10 @@ h1,h2,h3,p {
     color: $text-color;
 }
 
+h2.light, h3.light,p.light {
+    color: $background-color;
+}
+
 h1{
     display: none;
 }
@@ -163,9 +168,9 @@ form {
 .input{
     box-sizing: border-box;
     background: transparent;
-    color: $color-primary;
+    color: $text-color;
     margin-top: 0;
-    border: solid $text-color 3px;
+    border: solid $color-primary 3px;
     width: 60%;
     -webkit-appearance: none;
     outline: none;

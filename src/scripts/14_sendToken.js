@@ -1,11 +1,33 @@
-const sendTokenMain = document.querySelector('.sendtokenMain')
+const sendTokenFormContainer = document.querySelector('.sendtokenMain__sendtokenLeftSection__formContainer')
 
-if(sendTokenMain) {
+if(sendTokenFormContainer) {
 
-    const authentificationForm = document.querySelector('#authentificationForm'),
+    const stepLabel = document.querySelector('#stepLabel'),
+          progression = document.querySelector('.js-progression')
+          authentificationForm = sendTokenFormContainer.querySelector('#authentificationForm'),
           senderAccountInput = authentificationForm.querySelector('#accountName'),
           senderPrivateKeyInput = authentificationForm.querySelector('#privateKey'),
-          inputs = sendTokenMain.querySelectorAll('input')
+          inputs = sendTokenFormContainer.querySelectorAll('input, select'),
+          savoirForm = sendTokenFormContainer.querySelector('#savoirForm'),
+          savoirNameInput = sendTokenFormContainer.querySelector('#savoirName'),
+          savoirCategoryInput = sendTokenFormContainer.querySelector('#savoirCategory'),
+          savoirTypeInput = sendTokenFormContainer.querySelector('#savoirType')
+
+    function goToSavoirForm() {
+        sendTokenFormContainer.classList.add('stepSavoirForm')
+        progression.classList.add('stepSavoirForm')
+        stepLabel.innerText = '2/3 Informations sur le savoir transmis'
+        let api = new EosApi
+        api.getAvalaibleCategoriesForUser(senderAccountInput.value,(categories) => {
+            console.log(categories)
+            categories.forEach(category => {
+                const option = document.createElement('option')
+                option.setAttribute('value',category)
+                option.innerText = category
+                savoirCategoryInput.appendChild(option)
+            })
+        })
+    }
 
     inputs.forEach(function (input) {
         input.addEventListener("input", function (e) {
@@ -18,28 +40,55 @@ if(sendTokenMain) {
         })
     })
 
-    console.log(authentificationForm)
     authentificationForm.addEventListener('submit',(e) => {
         e.preventDefault()
+        let state = true
         if (senderAccountInput.value.length != 12) {
             senderAccountInput.classList.add('error')
             senderAccountInput.parentElement.lastElementChild.innerHTML = "Nom de compte incorrect"
+            state = false
         }
         if (senderPrivateKeyInput.value.length < 10) {
             senderPrivateKeyInput.classList.add('error')
             senderPrivateKeyInput.parentElement.lastElementChild.innerHTML = "Clé privée incorrecte"
+            state = false
         }
-        let api = new EosApi
-        api.checkAuthentication(senderAccountInput.value,senderPrivateKeyInput.value,(response) => {
-            if (response == 'ok') {
-                console.log("hetsts§");
-                // Passer à la prochaine étape
-            } else {
-                senderPrivateKeyInput.classList.add('error')
-                senderPrivateKeyInput.parentElement.lastElementChild.innerHTML = response
-            }
-        })
+        if (state) {
+            let api = new EosApi
+            api.checkAuthentication(senderAccountInput.value,senderPrivateKeyInput.value,(response) => {
+                if (response == 'ok') {
+                    goToSavoirForm()
+                } else {
+                    senderPrivateKeyInput.classList.add('error')
+                    senderPrivateKeyInput.parentElement.lastElementChild.innerHTML = response
+                }
+            })
+        }
     })
     
+    savoirForm.addEventListener('submit',(e) => {
+        e.preventDefault()
+        let state = true
+        if (savoirNameInput.value.length < 6) {
+            savoirNameInput.classList.add('error')
+            savoirNameInput.parentElement.lastElementChild.innerHTML = "Saisissez un nom explicite pour le savoir transmis"
+            state = false
+        }
+        if (savoirCategoryInput.value == 'null') {
+            savoirCategoryInput.classList.add('error')
+            savoirCategoryInput.parentElement.lastElementChild.innerHTML = "Choisissez une catégorie"
+            state = false
+        }
+        if (savoirTypeInput.value == 'null') {
+            savoirTypeInput.classList.add('error')
+            savoirTypeInput.parentElement.lastElementChild.innerHTML = "Choisissez un type d'enseignement"
+            state = false
+        }
+        if (state) {
+            sendTokenFormContainer.classList.add('stepReceiversForm')
+            progression.classList.add('stepReceiversForm')
+            stepLabel.innerText = '3/3 Selection des apprenants'
+        }
+    })
 
 }
