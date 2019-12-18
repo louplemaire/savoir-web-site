@@ -152,6 +152,22 @@ p.secondary {
 
 // error
 
+.input{
+    background-color: $color-primary;
+    color: $background-color;
+    margin-top: 0;
+    border: solid $background-color 3px;
+    padding: 10px;;
+    width: 100%;
+    -webkit-appearance: none;
+    align-items: center;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: $font-primary;
+    padding-left: 16px;
+}
+
 .input.error{
     border-color: rgb(204, 37, 37);
 }
