@@ -35,7 +35,6 @@
         <div class="tokenTraffic">
             <div class="tokenTraffic__info">
                 <div class="tokenTraffic__info__number">
-                    167 000
                 </div>
                 <div>
                     tokens SAVOIR en circulation
