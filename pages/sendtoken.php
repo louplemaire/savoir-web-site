@@ -7,23 +7,25 @@
     <div class="sendtokenContainerSection">
     <section class="sendtokenMain__sendtokenLeftSection">
         <div class="form__sendtoken">
-        <form method="post" action="#">
-            <div>
-                <label for="accountName">Nom du compte</label>
-                <input class="inputsendtoken" type="text" name="accountName" id="accountName">
-            </div>
-            <div>
-                <label for="privateKey" class="">Clé privée</label>
-                <input class="inputsendtoken largeInputSendToken" type="text" name="privateKey" id="privateKey">
-            </div>
-            <div>
-                <input type="checkbox" id="stayConnected" name="stayConnected">
-                <label class="inline" for="stayConnected">Rester connecté</label>
-            </div>
-        </form>
-        </div>
-        <div class="container__sendtokenButton">
-            <a class="primaryButton sendtokenbutton" href="#">Suivant</a>
+            <form id="authentificationForm" method="post" action="#">
+                <div>
+                    <label for="accountName">Nom du compte</label>
+                    <input class="inputsendtoken" type="text" name="accountName" id="accountName">
+                    <span class="errorSpan"></span>
+                </div>
+                <div>
+                    <label for="privateKey" class="">Clé privée</label>
+                    <input class="inputsendtoken largeInputSendToken" type="text" name="privateKey" id="privateKey">
+                    <span class="errorSpan"></span>
+                </div>
+                <div>
+                    <input type="checkbox" id="stayConnected" name="stayConnected">
+                    <label class="inline" for="stayConnected">Rester connecté</label>
+                </div>
+                <div class="container__sendtokenButton">
+                    <button type="submit" class="primaryButton sendtokenbutton">Suivant</button>
+                </div>
+            </form>
         </div>
     </section>
     <section class="sendtokenMain__sendtokenRightSection">

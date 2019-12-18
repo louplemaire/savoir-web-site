@@ -5,6 +5,8 @@
 
 // Primary button
 a.primaryButton, button.primaryButton{
+    font-family: $font-primary;
+    font-size: $font-size-body;
     -webkit-appearance: none;
     border: none;
     display: inline-block;
@@ -12,6 +14,7 @@ a.primaryButton, button.primaryButton{
     padding: 16px 32px;
     border-radius: 10px;
     text-decoration: none;
+    cursor: pointer;
     background-color: $color-secondary;
     color: $background-color;
     z-index: 1;
@@ -156,7 +159,6 @@ p.secondary {
 .errorSpan {
     display: block;
     color: rgb(204, 37, 37);
-    margin-top: 15px;
+    margin-top: 4px;
     margin-left: 10px;
-    transform: translateY(-16px);
 }
