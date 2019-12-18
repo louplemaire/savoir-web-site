@@ -7,6 +7,22 @@
             <input class="exploreMain__exploreContainer__explorer__researcher js-researcher" type="text" placeholder="Recherchez un utilisateur…">
             <div class="exploreMain__exploreContainer__explorer__subResearcher js-subResearcher">
                 <ul class="exploreMain__exploreContainer__explorer__subResearcher__list js-subResearcher-list invisible">
+                    <li class="exploreMain__exploreContainer__explorer__subResearcher__list__title">Catégories</li>
+                    <li class="exploreMain__exploreContainer__explorer__subResearcher__list__line">
+                        <div class="exploreMain__exploreContainer__explorer__subResearcher__list__line__info">
+                            <div class="exploreMain__exploreContainer__explorer__subResearcher__list__line__info__name">Ninja</div>
+                        </div>
+                        <div class="exploreMain__exploreContainer__explorer__subResearcher__list__line__number">10 utilisateurs</div>
+                    </li>
+                    <li class="exploreMain__exploreContainer__explorer__subResearcher__list__line">
+                        <div class="exploreMain__exploreContainer__explorer__subResearcher__list__line__info">
+                            <div class="exploreMain__exploreContainer__explorer__subResearcher__list__line__info__name">Ninja</div>
+                        </div>
+                        <div class="exploreMain__exploreContainer__explorer__subResearcher__list__line__number">10 utilisateurs</div>
+                    </li>
+                </ul>
+                <ul class="exploreMain__exploreContainer__explorer__subResearcher__list js-subResearcher-list invisible">
+                    <li class="exploreMain__exploreContainer__explorer__subResearcher__list__title">Utilisateurs</li>
                     <li class="exploreMain__exploreContainer__explorer__subResearcher__list__line">
                         <div class="exploreMain__exploreContainer__explorer__subResearcher__list__line__info">
                             <div class="exploreMain__exploreContainer__explorer__subResearcher__list__line__info__name">Nicolas Decreton</div>
