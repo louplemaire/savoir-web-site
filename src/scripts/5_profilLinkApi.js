@@ -65,6 +65,16 @@ function openDetailedCategory(category) {
     // Remplir la catégorie
     let api = new EosApi
 
+    const specName = document.querySelector('.profilMain__detail__info__name__specName')
+    const userName = document.querySelector('.profilMain__detail__info__name__userName')
+    const specNumber = document.querySelector('.profilMain__detail__info__number')
+    const savoirName = document.querySelector('.profilMain__detail__token__title__specName')
+
+    specName.innerText = category.savoirtopic
+    userName.innerText = userAccount
+    specNumber.innerText = `${category.tokensamount} SOR`
+    savoirName.innerText = `Savoirs "${category.savoirtopic}"`
+
     api.getTransactionsOfUserForCategory(userAccount,category.savoirtopic,(transactions) => {
         console.log(transactions)
         const list = document.querySelector('.profilMain__detail__token__list')
