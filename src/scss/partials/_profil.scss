@@ -98,6 +98,11 @@
             align-items: center;
             justify-content: space-between;
             margin: 20px 40px 56px 40px;
+            &__name{
+                &__specName{
+                    text-transform: capitalize;
+                }
+            }
             &__number{
                 font-family: $font-subtitle;
                 font-size: $font-size-subtitle;
@@ -116,6 +121,9 @@
                 justify-content: space-between;
                 margin: 0px 16px;
                 color: $background-color;
+                &__specName{
+                    text-transform: capitalize;
+                }
                 &__organize{
                     &__filter{
                         margin: 0px 4px;
