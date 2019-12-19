@@ -26,7 +26,6 @@ function getSearchResultsCategoriesDiv(d) {
     info.appendChild(userName)
 
     // Value
-    console.log(d)
     const value = document.createElement('div')
     value.classList.add('class="exploreMain__exploreContainer__explorer__subResearcher__list__line__number')
     value.classList.add('numberOpacity')
@@ -80,8 +79,6 @@ function getSearchResultsUsersDiv(d) {
 const researcher = document.querySelector('.js-researcher')
 
 if(researcher) {
-
-    console.log("search bar exists")
     const subResearcher = document.querySelector('.js-subResearcher')
 
     function openSearchBar() {
@@ -105,11 +102,9 @@ if(researcher) {
             openSearchBar()
             api.getSearchResults(researcher.value,(data) => {
                 // Vider la liste de propositions
-                console.log(data)
                 const categories = data.categories
                 const users = data.users
-                console.log(categories)
-                console.log(users)
+
                 listCategories.innerHTML = ""
                 listUsers.innerHTML = ""
     
