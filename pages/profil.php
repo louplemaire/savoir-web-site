@@ -7,6 +7,7 @@
         <!-- Name -->
         <div class="profilMain__info">
             <h2 class="profilMain__info__name"></h2>
+            <p><a id="mailLink" href="#"></a></p>
             <h3 class="profilMain__info__sorNumber"></h3>
         </div>
         <div class="profilMain__savoirs">
