@@ -91,7 +91,7 @@
                 list-style: none;
                 &__line{
                     margin-top: 16px;
-                    width: 42vw;
+                    width: 70vw;
                     &__date{
                         margin-left: 25px;
                         font-size: 12px;
@@ -103,7 +103,7 @@
                         align-items: center;
                         justify-content: space-between;
                         padding: 16px 24px 16px 16px;
-                        border-radius: 5px;
+                        border-radius: 10px;
                         box-shadow: inset 0px 0px 10px rgba(0,0,0,.5);
                         background: $background-color;
                         &__mention{

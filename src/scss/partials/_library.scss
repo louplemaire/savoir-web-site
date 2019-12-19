@@ -95,7 +95,7 @@ a.secondaryButton:hover::after{
         justify-content: center;
         width: 30vw;
         padding: 16px 6vw;
-        border-radius: 5px;
+        border-radius: 10px;
         background-color: $background-color;
         &__number,&__subject{
             margin-right: 8px;
@@ -113,7 +113,7 @@ a.secondaryButton:hover::after{
         z-index: -100;
         width: 100%;
         height: 100%;
-        border-radius: 5px;
+        border-radius: 10px;
         background: $color-secondary;
         opacity: 0.5;
         transform: translate(-4px, 4px);
@@ -215,7 +215,7 @@ form {
     border: solid $color-primary 3px;
     -webkit-appearance: none;
     outline: none;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 16px;
     font-family: $font-primary;
     padding: 8px 8px;
@@ -227,7 +227,7 @@ form {
     border: solid $color-primary 3px;
     -webkit-appearance: none;
     outline: none;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 16px;
     font-family: $font-primary;
     padding: 8px 8px;

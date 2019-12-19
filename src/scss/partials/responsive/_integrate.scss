@@ -1,19 +1,17 @@
 .integrateMain{
-    padding: 120px 26px 26px 26px;
-    &__integrateLeftSection{
-        width: 90%;
-        &__container{
-            &__verticalBar{
-                height: 122%;
-            }
+    &__sectionContainer {
+        padding: 0 26px;
+        &__integrateLeftSection {
+            width: 100%;
+        }
+        &__integrateRightSection{
+            display: none;
         }
     }
-    &__integrateRightSection{
-        display: none;
-    }
     &__bottomSection{
-        img{
-            transform: scaleY(4) translateY(12vh);
+        padding: 80px 40px;
+        .bulletPoint {
+            margin-left: -22px;
         }
         &__formContainer{
             form{
