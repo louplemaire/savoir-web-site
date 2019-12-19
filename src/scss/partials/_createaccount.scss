@@ -17,6 +17,10 @@
             p.secondary {
                 margin: 0;
             }
+            .createaccountButtonCont{
+                display: flex;
+                justify-content: center;
+            }
         }
     }
 
@@ -26,12 +30,8 @@
     &__createaccountRightSection {
         width: 50%;
         img{
+            margin-top: 15vh;
             width: 100%;
         }
     }
-}
-
-
-.createaccountButtonCont{
-margin-left: 160px;
 }

@@ -1,9 +1,9 @@
 <main class="createaccountMain background__createaccountMain">
-    <section class="createaccountMain__createaccountLeftSection">
+    <section class="createaccountMain__createaccountLeftSection js-mouseAnimated">
         <h2>Rejoindre SAVOIR en 20 secondes</h2>
-        <p class="createaccountMain__createaccountLeftSection__paragraph">Pour vous créer un compte, il vous suffit 
-simplement d’entrer votre nom et recevoir vos clés en
-respectant les conditions suivantes :</p>
+        <p class="createaccountMain__createaccountLeftSection__paragraph">
+            Choisissez un nom de compte et saisissez votre adresse mail et c'est parti ! Un wallet sécurisé sera automatiquement généré pour vous et votre clée privée vous sera attribué.
+        </p>
         <form id="createaccount" action="/validationcreateaccount">
             <div class="inputParent">
                 <label for="name">Nom (personnel ou organisation)</label>
@@ -15,7 +15,7 @@ respectant les conditions suivantes :</p>
             </div>
             <div class="inputParent">
                 <label for="email" class="">Adresse mail</label>
-                <input class="input" type="text" name="email" id="email">
+                <input class="input largeInput" type="text" name="email" id="email">
                 <span class="errorSpan"></span>
             </div>
             <div class="createaccountButtonCont">

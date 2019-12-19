@@ -1,6 +1,6 @@
 .profilMain{
     position: relative;
-    margin-top: 80px;
+    margin-top: 120px;
     &__info{
         margin-top: 25px;
         text-align: center;
@@ -10,7 +10,7 @@
     }
     &__savoirs{
         margin-top: 56px;
-        min-height: calc(100vh - 122px);
+        min-height: calc(100vh - 266px);
         padding: 40px 80px;
         background: no-repeat url('../../../assets/images/background-explorer.svg');
         background-size: 100% 100%;
