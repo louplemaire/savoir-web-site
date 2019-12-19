@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>SAVOIR - <?php include 'php/rooterTitle.php' ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/favicon.png" />
 
     <meta name="description" content="">
     <!-- Balises réseaux sociaux -->
