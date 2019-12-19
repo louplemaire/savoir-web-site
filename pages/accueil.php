@@ -32,21 +32,17 @@
                 <p>Un indicateur de développement fiable</p>
             </div>
         </div>
-        <div class="tokenTraffic">
+            <!-- Info -->
+        <div class="exploreMain__exploreContainer__tokenTraffic tokenTraffic">
             <div class="tokenTraffic__info">
-                <div class="tokenTraffic__info__number">
-                </div>
-                <div>
-                    tokens SAVOIR en circulation
-                </div>
+                <div class="tokenTraffic__info__number"></div>
+                <div>tokens SAVOIR en circulation</div>
             </div>
             <div class="tokenTraffic__info">
-                <div class="tokenTraffic__info__subject">
-                    "Blockchain"
-                </div>
-                <div>
-                    le sujet tendance de cette semaine
-                </div>
+                <a href="" class="linkInfoBar">
+                    <div class="tokenTraffic__info__subject"></div>
+                    <div>le sujet tendance cette semaine</div>
+                </a>
             </div>
         </div>
         <a href="#" class="primaryButton">Créer un compte</a>

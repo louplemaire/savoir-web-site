@@ -134,7 +134,7 @@ class EosApi {
 
     // Cet current trending topic
     getTrendingTopic() {
-        return 'Cuisine'
+        return 'Blockchain'
     }
 
     checkAuthentication(user,privateKey,handler) {

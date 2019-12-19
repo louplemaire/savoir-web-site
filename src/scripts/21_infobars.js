@@ -6,7 +6,7 @@ const link = document.querySelector('.linkInfoBar')
 
 if (subject) {
     subject.innerText = '"' + statsApi.getTrendingTopic() + '"'
-    link.setAttribute('href',`/categorie?c=${encodeURIComponent(statsApi.getTrendingTopic())}`)
+    link.setAttribute('href',`/categorie?c=${encodeURIComponent(statsApi.getTrendingTopic()).toLowerCase()}`)
 }
 
 if (number) {
