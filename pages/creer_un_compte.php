@@ -23,7 +23,7 @@
                 <div class="accountMain__accountLeftSection__container__rightContainer__paragraph">
                 <div class="accountMain__accountLeftSection__container__rightContainer__paragraph__bulletPoint buttonBulletPoint"> <div class="reverseBar"></div>
                 </div>
-                    <a href="/createaccount" class="primaryButton">
+                    <a href="/creation_de_compte" class="primaryButton">
                         Rejoindre SAVOIR
                     </a>
                 </div>
@@ -31,7 +31,7 @@
         </div>
     </section>
     <section class="accountMain__accountRightSection">
-        <img src="/assets/images/account_icon.svg" alt="">
+        <img src="/assets/images/creer_un_compte_icon.svg" alt="">
     </section>
 </main>
 <!-- <img class="accountMainBackground" src="assets/images/backgrounds_landing/footerwaveblue.svg" alt=""> -->

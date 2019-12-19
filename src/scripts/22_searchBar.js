@@ -8,7 +8,7 @@ function getSearchResultsCategoriesDiv(d) {
 
     // Créer le lien
     const link = document.createElement('a')
-    link.setAttribute('href',`/category?c=${encodeURIComponent(d.topic)}`)
+    link.setAttribute('href',`/categorie?c=${encodeURIComponent(d.topic)}`)
     link.classList.add('link')
     line.appendChild(link)
     

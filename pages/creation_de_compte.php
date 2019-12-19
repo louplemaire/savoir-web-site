@@ -4,7 +4,7 @@
         <p class="createaccountMain__createaccountLeftSection__paragraph">
             Choisissez un nom de compte et saisissez votre adresse mail et c'est parti ! Un wallet sécurisé sera automatiquement généré pour vous et votre clée privée vous sera attribué.
         </p>
-        <form id="createaccount" action="/validationcreateaccount">
+        <form id="createaccount" action="/confirmation_nouveau_compte">
             <div class="inputParent">
                 <label for="name">Nom (personnel ou organisation)</label>
                 <input class="input" type="text" name="name" id="name">

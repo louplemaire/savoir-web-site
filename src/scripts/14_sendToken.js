@@ -176,7 +176,7 @@ if(sendTokenFormContainer) {
         }
         api.sendTransaction(options,(result) => {
             if (result == 'ok') {
-                document.location.href= `/validationsendtoken?a=${accountName}`
+                document.location.href= `/confirmation_envoie_savoir?a=${accountName}`
             } else {
                 window.alert(`Une erreur est survenue : ${result}`)
             }
