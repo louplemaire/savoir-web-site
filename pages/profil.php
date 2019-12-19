@@ -11,13 +11,7 @@
         </div>
         <div class="profilMain__savoirs">
             <div class="profilMain__savoirs__title">
-                <div class="profilMain__savoirs__title__fakeDiv"></div>
                 <h3 class="profilMain__savoirs__title__name">Les savoirs de Nicolas</h3>
-                <div class="profilMain__savoirs__title__organize">
-                    <span>Organiser par</span>
-                    <span class="profilMain__savoirs__title__organize__filter">Quantité</span>
-                    <img src="../assets/images/arrow.svg" alt="#">
-                </div>
             </div>
             <!-- Specificity -->
             <div class="profilMain__savoirs__specificity">
@@ -40,11 +34,6 @@
                 <div class="profilMain__detail__token">
                     <div class="profilMain__detail__token__title">
                         <h3 class="profilMain__detail__token__title__specName light">Savoirs “Dev Web”</h3>
-                        <div class="profilMain__detail__token__title__organize">
-                            <span>Organiser par</span>
-                            <span class="profilMain__detail__token__title__organize__filter">Quantité</span>
-                            <img src="../assets/images/arrow.svg" alt="#">
-                        </div>
                     </div>
                     <ul class="profilMain__detail__token__list">
                     </ul>

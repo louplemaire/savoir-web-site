@@ -16,26 +16,11 @@
         background-size: 100% 100%;
         box-sizing: border-box;
         &__title{
-            display: flex;
-            flex-direction: row;
-            align-items: baseline;
-            justify-content: space-between;
-            &__fakeDiv{
-                width: 200px;
-                height: 20px;
-            }
+            text-align: center;
             &__name{
                 margin-bottom: 20px;
                 text-align: center;
                 color: $background-color;
-            }
-            &__organize{
-                color: $background-color;
-                &__filter{
-                    margin-left: 4px;
-                    margin-right: 4px;
-                    font-family: $font-subtitle;
-                }
             }
         }
         &__specificity{
@@ -115,11 +100,7 @@
             background-size: 100% 100%;
             box-sizing: border-box;
             &__title{
-                display: flex;
-                flex-direction: row;
-                align-items: baseline;
-                justify-content: space-between;
-                margin: 0px 16px;
+                text-align: center;
                 color: $background-color;
                 &__specName{
                     text-transform: capitalize;
