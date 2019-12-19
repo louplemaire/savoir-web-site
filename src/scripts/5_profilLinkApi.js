@@ -120,7 +120,11 @@ function getTransactionCategoryDiv(transaction) {
     // Destination
     const destination = document.createElement('div')
     destination.classList.add('profilMain__detail__token__list__line__deal__mention__destination')
-    destination.innerText = `${transaction.sender} -> ${transaction.receiver}`
+    if(transaction.sender == 'projetsavoir') {
+        destination.innerText = `${transaction.receiver} a transmis ce savoir ->`
+    } else {
+        destination.innerText = `-> ${transaction.sender} lui a transmis ce savoir`
+    }
     mention.appendChild(destination)
 
     // Value
