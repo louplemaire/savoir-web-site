@@ -17,6 +17,6 @@ $privateKeys = [
         <h2>Votre compte à bien été créé</h2>
         <h3>Voici votre clé privée, notez la bien !</h3>
         <p><?php echo $privateKeys[array_rand($privateKeys)] ?></p>
-        <a href="/explorer" class="primaryButton primaryButtonValidation">Explorer</a>
+        <a href="/explorer" class="primaryButton primaryButtonValidation">Explorer SAVOIR</a>
     </div>
 </main>

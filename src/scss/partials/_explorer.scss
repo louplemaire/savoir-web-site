@@ -64,7 +64,6 @@
                         flex-direction: row;
                         justify-content: space-between;
                         padding: 16px 0px;
-                        cursor: pointer;
                         &__info{
                             display: flex;
                             flex-direction: row;
@@ -134,4 +133,19 @@
     .exploreMain__exploreContainer__explorer__subResearcher__list {
         display: block;
     }
+}
+.capital{
+    text-transform: capitalize;
+}
+.numberOpacity{
+    opacity: 0.7;
+}
+.link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    text-decoration: none;
+    color: $text-color;
+    cursor: pointer;
 }

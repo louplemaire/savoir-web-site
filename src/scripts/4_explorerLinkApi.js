@@ -47,7 +47,7 @@ if(tokenTrafficList) {
         // Valeur
         const value = document.createElement('div')
         value.classList.add('exploreMain__exploreContainer__lastTokenTraffic__list__line__deal__value')
-        value.innerText = transaction.amount
+        value.innerText = `${transaction.amount} SOR`
         deal.appendChild(value)
 
         return line
