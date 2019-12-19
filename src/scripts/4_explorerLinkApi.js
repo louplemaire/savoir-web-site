@@ -47,8 +47,14 @@ if(tokenTrafficList) {
         // Valeur
         const value = document.createElement('div')
         value.classList.add('exploreMain__exploreContainer__lastTokenTraffic__list__line__deal__value')
-        value.innerText = `${transaction.amount} SOR`
+        value.innerText = `${transaction.amount}`
         deal.appendChild(value)
+
+        // Token logo
+        const tokenLogo = document.createElement('img')
+        tokenLogo.setAttribute('src', '../../assets/images/icontoken.svg')
+        tokenLogo.classList.add('tokenLogo')
+        value.appendChild(tokenLogo)
 
         return line
     }

@@ -20,20 +20,26 @@ function getCategoryDiv(category) {
     // // Token acquis
     const tokenOwned = document.createElement('div')
     tokenOwned.classList.add('profilMain__savoirs__specificity__list__line__info__expertise__tokenOwned')
-    tokenOwned.innerText = `${category.received} savoirs acquéris`
+    tokenOwned.innerText = `${category.received} savoir(s) acquis`
     info.appendChild(tokenOwned)
 
     // // Token transmis
     const tokenGived = document.createElement('div')
     tokenGived.classList.add('profilMain__savoirs__specificity__list__line__info__expertise__tokenGived')
-    tokenGived.innerText = `${category.send} savoirs transmis`
+    tokenGived.innerText = `${category.send} savoir(s) transmis`
     info.appendChild(tokenGived)
 
     // // Valeur
     const value = document.createElement('div')
     value.classList.add('profilMain__savoirs__specificity__list__line__number')
-    value.innerText = `${category.tokensamount} SOR`
+    value.innerText = `${category.tokensamount}`
     line.appendChild(value)
+
+    // Token logo
+    const tokenLogo = document.createElement('img')
+    tokenLogo.setAttribute('src', '../../assets/images/icontoken.svg')
+    tokenLogo.classList.add('tokenLogo')
+    value.appendChild(tokenLogo)
 
     // // Ouvrir la catégorie
     const closeProfilWindowButton = document.querySelector('.js-close-button')
@@ -120,8 +126,14 @@ function getTransactionCategoryDiv(transaction) {
     // Value
     const value = document.createElement('div')
     value.classList.add('profilMain__detail__token__list__line__deal__value')
-    value.innerText = `${transaction.amount} SOR`
+    value.innerText = `${transaction.amount}`
     deal.appendChild(value)
+
+    // Token logo
+    const tokenLogo = document.createElement('img')
+    tokenLogo.setAttribute('src', '../../assets/images/icontoken.svg')
+    tokenLogo.classList.add('tokenLogo')
+    value.appendChild(tokenLogo)
 
     return line
 }

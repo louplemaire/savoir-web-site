@@ -30,7 +30,7 @@ function getSearchResultsCategoriesDiv(d) {
     const value = document.createElement('div')
     value.classList.add('class="exploreMain__exploreContainer__explorer__subResearcher__list__line__number')
     value.classList.add('numberOpacity')
-    value.innerText = `${d.users} utilisateurs`
+    value.innerText = `${d.users} utilisateur(s)`
     link.appendChild(value)
 
     return line
@@ -64,8 +64,14 @@ function getSearchResultsUsersDiv(d) {
     const value = document.createElement('div')
     value.classList.add('class="exploreMain__exploreContainer__explorer__subResearcher__list__line__number')
     value.classList.add('numberOpacity')
-    value.innerText = `${d.tokensamount} SOR`
+    value.innerText = `${d.tokensamount}`
     link.appendChild(value)
+
+    // Token logo
+    const tokenLogo = document.createElement('img')
+    tokenLogo.setAttribute('src', '../../assets/images/icontoken.svg')
+    tokenLogo.classList.add('tokenLogo')
+    value.appendChild(tokenLogo)
 
     return line
 }

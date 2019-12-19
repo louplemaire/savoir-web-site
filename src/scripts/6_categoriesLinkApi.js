@@ -40,20 +40,26 @@ if(list) {
         // Token owned
         const tokenOwned = document.createElement('div')
         tokenOwned.classList.add('exploreMain__searchTraffic__traffic__list__line__info__expertise__tokenOwned')
-        tokenOwned.innerText = `${user.received} savoirs "${searchedCategory}" acquis`
+        tokenOwned.innerText = `${user.received} savoir(s) "${searchedCategory}" acquis`
         info.appendChild(tokenOwned)
 
         // Token gived
         const tokenGived = document.createElement('div')
         tokenGived.classList.add('exploreMain__searchTraffic__traffic__list__line__info__expertise__tokenGived')
-        tokenGived.innerText = `${user.send} savoirs "${searchedCategory}" transmis`
+        tokenGived.innerText = `${user.send} savoir(s) "${searchedCategory}" transmis`
         info.appendChild(tokenGived)
 
         // Value
         const value = document.createElement('div')
         value.classList.add('exploreMain__searchTraffic__traffic__list__line__number')
-        value.innerText = `${user.tokensofcategory} SOR`
+        value.innerText = `${user.tokensofcategory}`
         link.appendChild(value)
+
+        // Token logo
+        const tokenLogo = document.createElement('img')
+        tokenLogo.setAttribute('src', '../../assets/images/icontoken.svg')
+        tokenLogo.classList.add('tokenLogo')
+        value.appendChild(tokenLogo)
 
         return line
     }

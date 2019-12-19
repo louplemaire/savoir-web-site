@@ -50,6 +50,9 @@
                         }
                     }
                     &__number{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
                         font-family: $font-subtitle;
                         font-size: $font-size-subtitle;
                     }
@@ -89,6 +92,9 @@
                 }
             }
             &__number{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
                 font-family: $font-subtitle;
                 font-size: $font-size-subtitle;
             }
@@ -104,12 +110,6 @@
                 color: $background-color;
                 &__specName{
                     text-transform: capitalize;
-                }
-                &__organize{
-                    &__filter{
-                        margin: 0px 4px;
-                        font-family: $font-subtitle;
-                    }
                 }
             }
             &__list{
@@ -143,6 +143,9 @@
                             }
                         }
                         &__value{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
                             font-family: $font-size-subtitle;
                             font-weight: bold;
                             font-size: $font-size-subtitle;
