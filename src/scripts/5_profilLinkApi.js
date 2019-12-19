@@ -149,7 +149,12 @@ if(profilInfo) {
     titleUserName.innerText = `Les savoirs de ${userAccount}`
 
     api.getUserSorBalance(userAccount,(balance) => {
-        userToken.innerText = `${balance} SOR`
+        userToken.innerText = `${balance}`
+        // Token logo
+        const tokenLogo = document.createElement('img')
+        tokenLogo.setAttribute('src', '../../assets/images/icontoken.svg')
+        tokenLogo.classList.add('tokenLogo')
+        userToken.appendChild(tokenLogo)
     })
 
     api.getUserCategories(userAccount,(categories) => {
