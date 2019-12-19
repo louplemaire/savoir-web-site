@@ -31,7 +31,7 @@
         </div>
     </section>
     <section class="accountMain__accountRightSection">
-        <img src="/assets/images/creer_un_compte_icon.svg" alt="">
+        <img src="/assets/images/creer_un_compte_icon.svg.svg" alt="">
     </section>
 </main>
 <!-- <img class="accountMainBackground" src="assets/images/backgrounds_landing/footerwaveblue.svg" alt=""> -->
