@@ -5,7 +5,7 @@ if(list) {
 
     const title = document.querySelector('.exploreMain__searchTraffic__title')
 
-    title.innerText = `Les utilisateurs ayant des connaissances en ${searchedCategory}`
+    title.innerText = `Les utilisateurs ayant des connaissances en "${searchedCategory}"`
 
     api.getUsersForCategory(searchedCategory,(users) => {
         users.forEach((user) => {
@@ -19,11 +19,17 @@ if(list) {
         line.classList.add('exploreMain__searchTraffic__traffic__list__line')
         list.appendChild(line)
 
+        // Créer le lien
+        const link = document.createElement('a')
+        link.setAttribute('href',`/profil?a=${encodeURIComponent(user.receiveraccount)}`)
+        link.classList.add('link')
+        line.appendChild(link)
+
         // Créer le contenu de la div catégorie de l'utilisateur
         // Info
         const info = document.createElement('div')
         info.classList.add('exploreMain__searchTraffic__traffic__list__line__info')
-        line.appendChild(info)
+        link.appendChild(info)
 
         // User name
         const userName = document.createElement('div')
@@ -47,7 +53,7 @@ if(list) {
         const value = document.createElement('div')
         value.classList.add('exploreMain__searchTraffic__traffic__list__line__number')
         value.innerText = `${user.tokensofcategory} SOR`
-        line.appendChild(value)
+        link.appendChild(value)
 
         return line
     }
