@@ -45,21 +45,21 @@ function getCategoryDiv(category) {
     const closeProfilWindowButton = document.querySelector('.js-close-button')
     const detailWindowGreyFilter = document.querySelector('.js-grey-filter')
     const detailWindow = document.querySelector('.js-detail-window')
-    const overflowProfil = document.querySelector('.js-overflowProfil')
+    const body = document.querySelector('body')
 
     line.addEventListener('click', () => {
+        body.classList.add('overflowHidden')
         detailWindow.classList.remove('invisible')
         detailWindowGreyFilter.classList.remove('invisible')
-        overflowProfil.classList.add('overflowHidden')
         openDetailedCategory(category)
     })
 
     // Fermer la catégorie
     if(closeProfilWindowButton){
         closeProfilWindowButton.addEventListener('click', () => {
+            body.classList.remove('overflowHidden')
             detailWindow.classList.add('invisible')
             detailWindowGreyFilter.classList.add('invisible')
-            overflowProfil.classList.remove('overflowHidden')
         })
     }
 
