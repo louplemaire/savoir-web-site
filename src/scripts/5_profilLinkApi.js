@@ -155,6 +155,7 @@ if(profilInfo) {
     const userName = document.querySelector('.profilMain__info__name')
     const userToken = document.querySelector('.profilMain__info__sorNumber')
     const titleUserName = document.querySelector('.profilMain__savoirs__title__name')
+    const mailLink = document.querySelector('#mailLink')
 
     userName.innerText = userAccount
     titleUserName.innerText = `Les savoirs de ${userAccount}`
@@ -166,6 +167,11 @@ if(profilInfo) {
         tokenLogo.setAttribute('src', '../../assets/images/icontoken.svg')
         tokenLogo.classList.add('tokenLogo')
         userToken.appendChild(tokenLogo)
+    })
+
+    api.getAccountEmail(userAccount,(email) => {
+        mailLink.setAttribute('href',`mailto:${email}`)
+        mailLink.innerText = email
     })
 
     api.getUserCategories(userAccount,(categories) => {

@@ -22,7 +22,8 @@
                     flex-direction: row;
                     align-items: center;
                     justify-content: space-between;
-                    width: 45%;
+                    box-sizing: border-box;
+                    width: calc(50% - 8px);
                     margin-top: 15px;
                     padding: 16px 24px 16px 16px;
                     border-radius: 10px;
