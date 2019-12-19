@@ -63,6 +63,13 @@ function getCategoryDiv(category) {
         })
     }
 
+    // Quiter la page détailler au click sur le detailWindowGreyFilter
+    detailWindowGreyFilter.addEventListener('click', () => {
+        body.classList.remove('overflowHidden')
+        detailWindow.classList.add('invisible')
+        detailWindowGreyFilter.classList.add('invisible')
+    })
+
     return line
 }
 
