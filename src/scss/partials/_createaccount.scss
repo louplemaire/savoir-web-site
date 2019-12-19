@@ -7,18 +7,27 @@
     background-repeat: no-repeat;
     background-position: bottom;
     z-index: -200;
+    padding-top: 120px;
+    box-sizing: border-box;
     &__createaccountLeftSection{
-        padding: 96px;
-        &__paragraph{
-            width: 50%;
+        padding: 0 80px;
+        width: 50%;
+        form {
+            margin-top: 40px;
+            p.secondary {
+                margin: 0;
+            }
         }
     }
 
 }
 
-.createaccountMain__createaccountRightSection{
-    img{
-        margin: 98px;
+.createaccountMain{
+    &__createaccountRightSection {
+        width: 50%;
+        img{
+            width: 100%;
+        }
     }
 }
 

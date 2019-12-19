@@ -7,24 +7,24 @@
             <div class="accountMain__accountLeftSection__container__rightContainer">
                 <div class="accountMain__accountLeftSection__container__rightContainer__paragraph">
                     <div class="accountMain__accountLeftSection__container__rightContainer__paragraph__bulletPoint"></div>
-                    <h3>Une technologie basée sur la blockchain EOS</h3>
-                    <p>La blockchain EOS est une plateforme décentralisée et sécurisée permettant de déployer des interactions automatisées entre ses utilisateurs</p>
+                    <h3>Gardez vos savoirs en sécurité</h3>
+                    <p>SAVOIR s'appuie sur la technologie décentralisée de la blockchain EOS assurant ainsi la sécurité de vos données sur le long terme.</p>
                 </div>
                 <div class="accountMain__accountLeftSection__container__rightContainer__paragraph">
-                <div class="accountMain__accountLeftSection__container__rightContainer__paragraph__bulletPoint"></div>
-                    <h3>Un compte SAVOIR est donc un wallet EOS</h3>
-                    <p>Les savoirs accumulés sur votre compte sont enregistrés dans votre wallet EOS, un outil simple d’utilisation. Il est possible de lier un wallet déjà existant à votre compte SAVOIR</p>
+                    <div class="accountMain__accountLeftSection__container__rightContainer__paragraph__bulletPoint"></div>
+                    <h3>Profitez d'un wallet à vie</h3>
+                    <p>Les jetons SAVOIR seront enregistrés sur un wallet EOS, un outil qui vous donnera accès à de multiples services. Vous pouvez également utiliser un wallet EOS déja existant pour se connecter à SAVOIR.</p>
                 </div>
                 <div class="accountMain__accountLeftSection__container__rightContainer__paragraph">
-                <div class="accountMain__accountLeftSection__container__rightContainer__paragraph__bulletPoint"></div>
-                <h3>Le cout d’un wallet EOS</h3>
-                <p>Le wallet EOS est un outil unique et nominatif. Son utilisation ainsi que la création du compte SAVOIR sont gratuites</p>
+                    <div class="accountMain__accountLeftSection__container__rightContainer__paragraph__bulletPoint"></div>
+                    <h3>Gratuit à vie</h3>
+                    <p>Le wallet EOS est un outil unique et nominatif, veillez donc à le garder en sécurité. Sa création tout comme son utilisation est gratuite.</p>
                 </div>
                 <div class="accountMain__accountLeftSection__container__rightContainer__paragraph">
                 <div class="accountMain__accountLeftSection__container__rightContainer__paragraph__bulletPoint buttonBulletPoint"> <div class="reverseBar"></div>
                 </div>
                     <a href="/createaccount" class="primaryButton">
-                        Créer un wallet EOS
+                        Rejoindre SAVOIR
                     </a>
                 </div>
             </div>

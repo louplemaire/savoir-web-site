@@ -15,8 +15,8 @@ $privateKeys = [
     <div class="validationMain__container js-mouseAnimated">
         <img src="../assets/images/illustrations/validat.svg" alt="">
         <h2>Votre compte à bien été créé</h2>
-        <h3>Votre clé privée est :</h3>
-        <h4><?php echo $privateKeys[array_rand($privateKeys)] ?></h4>
+        <h3>Voici votre clé privée, notez la bien !</h3>
+        <p><?php echo $privateKeys[array_rand($privateKeys)] ?></p>
         <a href="/explorer" class="primaryButton primaryButtonValidation">Explorer</a>
     </div>
 </main>
