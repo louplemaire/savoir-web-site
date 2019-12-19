@@ -85,7 +85,14 @@ function openDetailedCategory(category) {
 
     specName.innerText = category.savoirtopic
     userName.innerText = userAccount
-    specNumber.innerText = `${category.tokensamount} SOR`
+    specNumber.innerText = `${category.tokensamount}`
+
+    // Token logo
+    const tokenLogo = document.createElement('img')
+    tokenLogo.setAttribute('src', '../../assets/images/icontoken.svg')
+    tokenLogo.classList.add('tokenLogo')
+    specNumber.appendChild(tokenLogo)
+
     savoirName.innerText = `Savoirs "${category.savoirtopic}"`
     list.innerHTML = ""
 
