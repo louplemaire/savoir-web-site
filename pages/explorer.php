@@ -22,8 +22,10 @@
             <div>tokens SAVOIR en circulation</div>
         </div>
         <div class="tokenTraffic__info">
-            <div class="tokenTraffic__info__subject"></div>
-            <div>le sujet tendance cette semaine</div>
+            <a href="" class="linkInfoBar">
+                <div class="tokenTraffic__info__subject"></div>
+                <div>le sujet tendance cette semaine</div>
+            </a>
         </div>
     </div>
     <!-- Last traffic-->

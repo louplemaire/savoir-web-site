@@ -149,3 +149,10 @@
     color: $text-color;
     cursor: pointer;
 }
+.linkInfoBar{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    text-decoration: none;
+    color: $text-color;
+}
