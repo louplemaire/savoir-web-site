@@ -174,22 +174,24 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 150;
+    z-index: 15000;
     width: 100vw;
-    height: 100vh;
+    height: 10000%;
     background-color: #0D0D0D;
     opacity: 0.5;
 }
 .center{
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 80px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 200;
-    height: calc(100vh - 80px);
+    z-index: 20000;
     overflow-y: auto;
 }
 .overflowHidden{
     overflow-y: hidden;
     height: 100vh;
+}
+.js-grey-filter{
+    cursor: pointer;
 }
