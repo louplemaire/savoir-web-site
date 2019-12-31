@@ -1,8 +1,7 @@
 # Projet SAVOIR - Hetic Tech&Human
 
 ## Le sujet
-Ce projet s'intègre dans le thème "Humain et économie". Nous avons tenté de répondre à la problématique suivante : Et si l’économie de demain était indexée sur la croissance du savoir ?
-Pour cela, nous avons conçu et developpé une plateforme basée sur la technologie de la blockchain permettant d'enregistrer les divers transmissions de savoirs qui s'effectuent chaque jour tout en récompensant les utilisateurs avec un token symbolique. Le but étant ainsi d'avoir accès à un historique de la connaissance dans le temps afin de valoriser celui-ci.
+Ce projet s'intègre dans le thème "Humain et économie". Nous avons tenté de répondre à la problématique suivante : et si l’économie de demain était indexée sur la croissance du savoir ? Pour cela, nous avons conçu et développé une plateforme basée sur la technologie de la blockchain permettant d'enregistrer les diverses transmissions de savoirs qui s'effectuent chaque jour tout en récompensant les utilisateurs avec un token symbolique. Le but étant ainsi d'avoir accès à un historique de la connaissance dans le temps afin de valoriser celui-ci.
 
 ## L'équipe
 Hugo Leroy - Développeur blockchain, front-end & designer UI/UX
